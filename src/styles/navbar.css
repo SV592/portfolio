@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center; /* Left-align links */
     background-color: #0D0208; /* Background color */
-    padding: 10px; /* Add padding for spacing */
+    padding: 15px; /* Add padding for spacing */
   }
   
   .navbar-custom a {
@@ -19,20 +19,17 @@
   .navbar-custom a:hover {
     color: #00FF41; /* Change text color on hover */
   }
-  
-
  /* Navbar.css */
 
 
 /* Theme change */
-
 .theme-toggle-button {
     background-color: transparent;
     border: none;
     color: #0D0208;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s; /* Add a transition for smooth color change */
-  
+
     /* Default styles for light mode */
     background-color: transparent;
     color: #fff;
@@ -52,4 +49,5 @@
     background-color: white;
     color: black;
   }
+  
   

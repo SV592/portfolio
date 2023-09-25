@@ -1,0 +1,71 @@
+/* home-section.css */
+
+/* Remove hyperlink (href) color and underline */
+a {
+    text-decoration: none;
+    color: inherit; /* Optional: Inherit the color from the parent element */
+}  
+
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh; /* Each section takes up at least half of the viewport height */
+    width: 100%; /* Each section takes up the entire viewport width */
+    padding: 20px;
+    text-align: center;
+}
+  
+
+.home-section {
+  background-color: #fff; /* Default background color */
+  padding: 20px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.square-image-wrapper {
+    width: 200px; /* Set the desired square width */
+    height: 185px; /* Set the same height as width to make it square */
+    overflow: hidden; /* Hide any overflow if the image is larger */
+    margin: 0 auto; /* Center the square container horizontally */
+    border: 5px solid #0d0208; /* Add a border with the desired color and thickness */
+    box-sizing: border-box; /* Include the border in the element's total width and height */
+}
+  
+.home-image {
+    max-width: 100%; /* Limit the image width to fit the square container */
+    height: auto; /* Allow the image height to adjust proportionally */
+    display: block; /* Ensure the image is displayed as a block element */
+} 
+
+.home-section.dark-mode {
+  background-color: #0d0208; /* Dark background color for dark mode */
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%; /* Make the image a square */
+  margin-bottom: 5px;
+}
+
+.subtext p {
+  color: #333; /* Default text color */
+}
+
+.subtext p.dark-mode {
+  color: #fff; /* Text color for dark mode */
+}
+
+.icon-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.icon-link{
+    margin-inline: 5px;
+}
+

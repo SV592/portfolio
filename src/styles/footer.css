@@ -1,0 +1,22 @@
+/* footer.css */
+
+.footer-custom {
+    background-color: #0D0208;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+
+.footer-text {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* .footer-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */

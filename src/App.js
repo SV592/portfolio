@@ -10,14 +10,14 @@ import { ThemeProvider } from './contexts/theme';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app-container">
       <ThemeProvider>
         <Navbar />
-        <Home />
-        <About />
-        <Timeline />
-        <Papers />
-        <Projects />
+        <Home className="section" />
+        <About className="section" />
+        <Timeline className="section" />
+        <Papers className="section" />
+        <Projects className="section" />
         <Footer />
       </ThemeProvider>
     </div>
