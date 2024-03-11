@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Reset default styles */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color and font styles */
+body {
+    background-color: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+header h1 {
+    margin: 0;
+}
+
+main {
+    padding-top: 60px; /* Adjust this value to match the height of your header */
+    padding-bottom: 60px;
+}
+
+section {
+    margin-bottom: 20px;
+    height: 100vh;
+    overflow: auto; /* Add a scrollbar if the content is taller than the viewport */
+}
+
+section::before {
+    content: "";
+    display: block;
+    height: 75px; /* Adjust this value to match the height of your header */
+    margin-top: -50px; /* Same as the height */
+}
+
+section h2 {
+    color: #333;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+/* Style the heading */
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Style the paragraph */
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 100; display: flex;
+    justify-content: center;
+    align-items: center;
+}
