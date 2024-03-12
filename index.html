@@ -5,76 +5,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shaquille Pearson</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 </head>
 <body>
     <header>
-            <nav>
-                <a href="#about">About Me</a>
-                <a href="#projects">Projects</a>
-                <a href="#papers">Projects</a>
-                <a href="#skills">Skills</a>
-                <a href="#contact">Contact</a>
-            </nav>
-            
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">Shaquille Pearson</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#papers">Papers</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
     </header>
     
     <main>
-        <section id="about">
-            <h1>Software Engineer/Researcher</h1>
-            <h2>About Me</h2>
-            <p>Write a brief introduction about yourself and your background as a software engineer/researcher.</p>
-        </section>
+        <div class="container">
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <h3>Project 1</h3>
-                    <p>Description of project 1.</p>
-                </li>
-                <li>
-                    <h3>Project 2</h3>
-                    <p>Description of project 2.</p>
-                </li>
-                <!-- Add more projects as needed -->
-            </ul>
-        </section>
+            <section id="about" class="my-5 about-section">
+                <h2 class="text-center section-title">About Me</h2>
+                <div class="row">
+                    <div class="col-lg-3 d-flex justify-content-end align-self-center pattern">
+                        <img src="./imgs/Profile.jpeg" alt="Shaquille Pearson" class="img-fluid">
+                    </div>
+                    <div class="col-lg-9 d-flex flex-column align-self-center">
+                        <p class="about-text">
+                            Hello, I'm Shaquille Pearson. I'm a software developer with experience in Java, Python, and C++. I've worked with frameworks like React, Angular, and Spring, and I'm familiar with databases like MySQL and MongoDB.
+                            I'm passionate about learning new technologies and solving challenging problems.
+                        </p>
+                    </div>
+                </div>
+            </section>
 
-        <section id="papers">
-            <h2>Papers</h2>
-            <ul>
-                <li>
-                    <h3>Paper 1</h3>
-                    <p>Description of Paper 1.</p>
-                </li>
-                <li>
-                    <h3>Paper 2</h3>
-                    <p>Description of Paper 2.</p>
-                </li>
-                <!-- Add more papers as needed -->
-            </ul>
-        </section>
+            <section id="skills" class="my-5">
+                <h2 class="text-center">Skills</h2>
+                <div class="row">
+                    <div class="col-md-4 skill">
+                        <i class="fas fa-code fa-2x"></i>
+                        <h4>Programming</h4>
+                        <p>Java, Python, C++</p>
+                    </div>
+                    <div class="col-md-4 skill">
+                        <i class="fas fa-database fa-2x"></i>
+                        <h4>Databases</h4>
+                        <p>MySQL, MongoDB</p>
+                    </div>
+                    <div class="col-md-4 skill">
+                        <i class="fas fa-mobile-alt fa-2x"></i>
+                        <h4>Mobile Development</h4>
+                        <p>React Native, Flutter</p>
+                    </div>
+                </div>
+            </section>
+        
+            <section id="projects" class="my-5">
+                <h2 class="text-center">Projects</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <h3>Project 1</h3>
+                        <p>Description of project 1.</p>
+                    </li>
+                    <li class="list-group-item">
+                        <h3>Project 2</h3>
+                        <p>Description of project 2.</p>
+                    </li>
+                    <!-- Add more projects as needed -->
+                </ul>
+            </section>
+        
+            <section id="papers" class="my-5">
+                <h2 class="text-center">Papers</h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Paper 1</h3>
+                                <p class="card-text">Description of Paper 1.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <h3 class="card-title">Paper 2</h3>
+                                <p class="card-text">Description of Paper 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more papers as needed -->
+                </div>
+            </section>
+            
+            <section id="contact" class="my-5">
+                <h2 class="text-center">Contact</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Email</h3>
+                        <p class="card-text">shaquillepearson9@@gmail.com</p>
+                        <h3 class="card-title">Phone</h3>
+                        <p class="card-text">+1-548-333-0349</p>
+                        <!-- Add more contact methods as needed -->
+                    </div>
+                </div>
+            </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>Programming languages: Java, Python, C++</li>
-                <li>Frameworks: React, Angular, Spring</li>
-                <li>Database: MySQL, MongoDB</li>
-                <!-- Add more skills as needed -->
-            </ul>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Email: your-email@example.com</p>
-            <p>Phone: 123-456-7890</p>
-            <!-- Add more contact information as needed -->
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2022 Shaquille Pearson</p>
+        </div>
+    <footer class="text-center">
+        <p>&copy; 2024 Shaquille Pearson</p>
+        <div class="social-icons">
+            <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
     </footer>
 </body>
 </html>
