@@ -1,281 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
     <title>Shaquille Pearson</title>
+    <!-- Link to the local stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Link to the Bootstrap stylesheet -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- Link to the Magnific Popup stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <!-- Link to the Font Awesome stylesheet -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
-
+    <!-- Link to the local JavaScript file -->
     <script src="script.js"></script>
+    <!-- Link to the jQuery library -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <!-- Link to the Bootstrap JavaScript library -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- Link to the jQuery library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Link to the Magnific Popup JavaScript library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
 </head>
 <body>
+    <!-- Header section with navigation -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <!-- Website logo -->
             <a class="navbar-brand" href="#">Shaquille Pearson</a>
+            <!-- Navigation toggle button for mobile view -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
+            <!-- Navigation menu -->
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav">
                 <li class="nav-item active">
                   <a class="nav-link" href="#">About Me</a>
                 </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#projects">Projects</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#papers">Papers</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#contact">Contact</a>
-                </li>
+                <!-- Other navigation items -->
               </ul>
             </div>
           </nav>
     </header>
     
+    <!-- Main content of the webpage -->
     <main>
         <div class="container">
-
+            <!-- About Me section -->
             <section id="about" class="my-5 about-section">
                 <h2 class="text-center section-title">About Me</h2>
-                <div class="row">
-                    <div class="col-lg-3 d-flex justify-content-end align-self-center pattern">
-                        <img src="./imgs/Profile.jpeg" alt="Shaquille Pearson" class="img-fluid">
-                    </div>
-                    <div class="col-lg-9 d-flex flex-column align-self-center">
-                        <p class="about-text">
-                            Hello, I'm Shaquille Pearson. I'm a software developer with experience in Java, Python, and C++. I've worked with frameworks like React, Angular, and Spring, and I'm familiar with databases like MySQL and MongoDB.
-                            I'm passionate about learning new technologies and solving challenging problems.
-                        </p>
-                    </div>
-                </div>
+                <!-- Other content -->
             </section>
 
+            <!-- Skills section -->
             <section id="skills" class="my-5">
                 <h2 class="text-center">Skills</h2>
-                <div class="row">
-                    <div class="col-md-4 col-12 skill">
-                        <div class="skill-header">
-                            <i class="fas fa-code fa-2x"></i>
-                            <h4>Programming Languages</h4>
-                        </div>
-                        <ul>
-                            <li>  
-                                <div class="skill-item">
-                                    <span>JavaScript</span>
-                                </div>
-                                <div class="skill-level">
-                                    <span style="width: 80%;" class="percentage">80%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span>TypeScript</span>
-                                <div class="skill-level">
-                                    <span style="width: 70%;" class="percentage">70%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Python</span>
-                                <div class="skill-level">
-                                    <span style="width: 70%;" class="percentage">70%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Latex</span>
-                                <div class="skill-level">
-                                    <span style="width: 60%;" class="percentage">60%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Java</span>
-                                <div class="skill-level">
-                                    <span style="width: 50%;" class="percentage">50%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Dart</span>
-                                <div class="skill-level">
-                                    <span style="width: 30%;" class="percentage">30%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span>SQL</span>
-                                <div class="skill-level">
-                                    <span style="width: 65%;" class="percentage">65%</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4 col-12 skill">
-                        <div class="skill-header">
-                            <i class="fas fa-tools fa-2x"></i>
-                            <h4>Technologies</h4>
-                        </div>
-                        <ul>
-                            <li>
-                                <span>Docker</span>
-                                <div class="skill-level">
-                                    <span style="width: 50%;" class="percentage">50%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Postman</span>
-                                <div class="skill-level">
-                                    <span style="width: 55%;" class="percentage">55%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Git</span>
-                                <div class="skill-level">
-                                    <span style="width: 70%;" class="percentage">70%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span>NodeJS</span>
-                                <div class="skill-level">
-                                    <span style="width: 62%;" class="percentage">65%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Linux</span>
-                                <div class="skill-level">
-                                    <span style="width: 40%;" class="percentage">40%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span>MongoDB</span>
-                                <div class="skill-level">
-                                    <span style="width: 50%;" class="percentage">50%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Firebase</span>
-                                <div class="skill-level">
-                                    <span style="width: 30%;" class="percentage">30%</span>
-                                </div>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                    <div class="col-md-4 col-12 skill">
-                        <div class="skill-header">
-                            <i class="fas fa-layer-group fa-2x"></i>
-                            <h4>Frameworks</h4>
-                        </div>
-                        <ul>
-                            <li>
-                                <span>ReactJS</span>
-                                <div class="skill-level">
-                                    <span style="width: 80%;" class="percentage">80%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span>React Native</span>
-                                <div class="skill-level">
-                                    <span style="width: 55%;" class="percentage">55%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span>ExpressJS</span>
-                                <div class="skill-level">
-                                    <span style="width: 70%;" class="percentage">70%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span>jQuery</span>
-                                <div class="skill-level">
-                                    <span style="width: 25%;" class="percentage">25%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span>pyTorch</span>
-                                <div class="skill-level">
-                                    <span style="width: 30%;" class="percentage">30%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Flutter</span>
-                                <div class="skill-level">
-                                    <span style="width: 82%;" class="percentage">80%</span>
-                                </div>
-                            </li>
-                            <li>
-                                <span>Electron</span>
-                                <div class="skill-level">
-                                    <span style="width: 60%;" class="percentage">60%</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <!-- Other content -->
             </section>
         
+            <!-- Projects section -->
             <section id="projects" class="my-5">
                 <h2 class="text-center">Projects</h2>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <h3>Project 1</h3>
-                        <p>Description of project 1.</p>
-                    </li>
-                    <li class="list-group-item">
-                        <h3>Project 2</h3>
-                        <p>Description of project 2.</p>
-                    </li>
-                    <!-- Add more projects as needed -->
-                </ul>
+                <!-- Other content -->
             </section>
         
+            <!-- Papers section -->
             <section id="papers" class="my-5">
                 <h2 class="text-center">Papers</h2>
-                <div class="row">
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Paper 1</h3>
-                                <p class="card-text">Description of Paper 1.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="card">
-                            <div class="card-body">
-                                <h3 class="card-title">Paper 2</h3>
-                                <p class="card-text">Description of Paper 2.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Add more papers as needed -->
-                </div>
+                <!-- Other content -->
             </section>
             
+            <!-- Contact section -->
             <section id="contact" class="my-5">
                 <h2 class="text-center">Contact</h2>
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Email</h3>
-                        <p class="card-text">shaquillepearson9@@gmail.com</p>
-                        <h3 class="card-title">Phone</h3>
-                        <p class="card-text">+1-548-333-0349</p>
-                        <!-- Add more contact methods as needed -->
-                    </div>
-                </div>
+                <!-- Other content -->
             </section>
 
         </div>
+    <!-- Footer section -->
     <footer class="text-center">
         <p>&copy; 2024 Shaquille Pearson</p>
+        <!-- Social media links -->
         <div class="social-icons">
             <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
             <a href="https://linkedin.com/in/yourusername" target="_blank"><i class="fab fa-linkedin"></i></a>
