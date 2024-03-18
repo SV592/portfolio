@@ -82,7 +82,6 @@ footer {
     bottom: 0;
     width: 100%;
     z-index: 100; 
-    /* padding: 10px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -182,10 +181,6 @@ p, .about-text {
     margin-right: 20px; /* Add space to the right of the image */
 }
 
-.img-fluid:hover {
-    transform: scale(1.05);
-}
-
 #about {
     display: flex;
     flex-direction: column;
@@ -221,91 +216,89 @@ p, .about-text {
 
 
 /* Skills section styles */
-#skills .skill {
-    text-align: left;
+#skillsCarousel {
+    overflow: auto;
+    border-radius: 15px;
     padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
     transition: all 0.3s ease;
-    position: relative;
-    z-index: 1
 }
 
-#skills .skill:hover {
+.carousel-item {
+    height: 100%; /* make the carousel items fill the height of the carousel */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#skillsCarousel:hover {
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.3); /* darker green shadow on hover */
+    transform: scale(1.05);
+}
+
+.carousel-control-prev i,
+.carousel-control-next i {
+    color: black; /* Change this to the color you want */
+}
+
+.carousel-control-prev :hover,
+.carousel-control-next :hover {
+    transform: scale(1.05);
+}
+
+.skills-list {
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+}
+
+/* Projects section */
+#projects{
+    background-color: #ffffff; /* White background */
+    padding: 0; /* No padding */
+    position: relative;
+}
+
+#projects h2 {
+    text-align: center; /* Centered title */
+    margin-bottom: 20px; /* Space below the title */
+}
+
+#projects .list-group-item {
+    background-color: #f1f1f1; /* Light grey background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    margin-bottom: 20px; /* Space below each card */
+    transition: all 0.3s ease;
+    padding: 20px; /* Some padding */
+}
+
+#projects .list-group-item:hover {
     box-shadow: 0 0 10px rgba(0, 128, 0, 0.3);
     transform: scale(1.05);
     z-index: 2;
 }
 
-#skills .skill i {
-    margin-bottom: 10px;
-    color: #008000;
-}
-
-#skills .skill-name {
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #008000;
-}
-
-#skills ul li span {
-    display: block;
-    font-weight: bold;
-    color: #333;
-}
-
-#skills ul li .skill-level {
-    height: 20px;
-    width: 100%;
-    background-color: #ddd;
-    border-radius: 10px;
-    margin-top: 5px;
-}
-
-#skills ul li .skill-level span {
-    display: block;
-    height: 100%;
-    border-radius: 10px;
-    background-color: #008000;
-}
-
-.skill-level {
-    position: relative;
-}
-
-.skill-level span {
-    position: absolute;
-    display: block;
-    height: 100%;
-    line-height: 18px;
-    text-align: center;
-}
-
-.skill-header {
-    display: flex;
-    align-items: center;
-}
-
-.skill-header i {
-    margin-right: 10px;
-}
-
-.skill-item {
-    display: flex;
-    align-items: center;
-}
-
-.skill-item i {
-    margin-right: 10px;
-}
-
-.skill-level .percentage {
-    color: #ffffff !important; /* white color */
-}
-
-
 /* Media queries */
+@media (max-width: 600px) {
+    #skills {
+        position: relative; /* Add this line */
+    }
+
+    #skills .skill {
+        position: absolute; /* Change this line */
+        width: 100%; /* Add this line */
+        z-index: 1; /* All skills have the same z-index by default */
+    }
+
+    #skills .skill:hover {
+        z-index: 2; /* The hovered skill has a higher z-index */
+    }
+}
+
+
 @media (max-width: 600px) {
     header {
         height: 80px;
@@ -402,6 +395,7 @@ p {
         margin-right: auto;
     }
 }
+
 
 
 
