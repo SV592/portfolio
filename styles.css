@@ -269,7 +269,7 @@ p, .about-text {
 #projects .list-group-item {
     background-color: #f1f1f1; /* Light grey background */
     border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
     margin-bottom: 20px; /* Space below each card */
     transition: all 0.3s ease;
     padding: 20px; /* Some padding */
