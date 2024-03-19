@@ -219,17 +219,21 @@ p, .about-text {
 #skillsCarousel {
     overflow: auto;
     border-radius: 15px;
-    padding: 20px;
     background-color: #f8f9fa;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
     transition: all 0.3s ease;
+    display: flex; /* Use Flexbox */
+    flex-direction: column; /* Stack the children vertically */
+    justify-content: center; /* Center the children vertically */
+    align-items: center; /* Center the children horizontally */
+    height: 70%; /* Make the carousel item take up as much vertical space as possible */
 }
 
 .carousel-item {
     height: 100%; /* make the carousel items fill the height of the carousel */
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start; /* align the content to the top */
     align-items: center;
 }
 
@@ -248,10 +252,57 @@ p, .about-text {
     transform: scale(1.05);
 }
 
+.title-wrapper {
+    width: 100%; /* Make the title wrapper take up as much horizontal space as possible */
+    text-align: center; /* Center the title */
+}
+
+.skills-section {
+    background-image: radial-gradient(circle, #008000 1px, transparent 1px), radial-gradient(circle, #008000 1px, transparent 1px);
+    background-size: 20px 20px; /* Size of the squares */
+    background-position: 0 0, 10px 10px; /* Position of the background */
+}
+
 .skills-list {
-    columns: 2;
-    -webkit-columns: 2;
-    -moz-columns: 2;
+    display: grid; /* Use CSS Grid */
+    grid-template-columns: repeat(3, 1fr); /* Create two columns */
+    gap: 10px; /* Add some space between the grid items */
+    justify-items: center; /* Horizontally center the content of the grid items */
+    align-items: center; /* Vertically center the content of the grid items */
+    list-style-type: none; /* Remove the default list style */
+}
+
+.skills-list li {
+    text-align: center; /* Center the text */
+}
+
+.skill-icon {
+    align-self: center; /* Vertically center the icon */
+}
+
+.skills-list li i {
+    margin-right: 10px; /* Add some space between the icon and the skill name */
+}
+
+.star-rating {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.star-rating i {
+    color: #008000;
+    font-size: 16px; /* Increase the size of the stars */
+}
+
+.title-icon-wrapper {
+    display: flex; /* Use flexbox to align the icon and the title */
+    align-items: center; /* Vertically center the icon and the title */
+}
+
+.title-icon-wrapper i {
+    margin-right: 10px; /* Add some space between the icon and the title */
+    color: #008000; /* Green color for the icon */
+    font-size: 25px; /* Increase the size of the icon */
 }
 
 /* Projects section */
