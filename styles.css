@@ -265,15 +265,15 @@ p, .about-text {
 
 .skills-list {
     display: grid; /* Use CSS Grid */
+    gap: 10px; /* Add some space between the list items */ 
     grid-template-columns: repeat(3, 1fr); /* Create two columns */
-    gap: 10px; /* Add some space between the grid items */
-    justify-items: center; /* Horizontally center the content of the grid items */
-    align-items: center; /* Vertically center the content of the grid items */
+    justify-items: start; /* Horizontally center the content of the grid items */
+    align-items: start; /* Vertically center the content of the grid items */
     list-style-type: none; /* Remove the default list style */
 }
 
 .skills-list li {
-    text-align: center; /* Center the text */
+    text-align: left; /* Center the text */
 }
 
 .skill-icon {
@@ -296,13 +296,22 @@ p, .about-text {
 
 .title-icon-wrapper {
     display: flex; /* Use flexbox to align the icon and the title */
-    align-items: center; /* Vertically center the icon and the title */
+    align-items: center; /*Vertically center the icon and the title */
+    justify-content: flex-start; /* Align the icon and the title to the left */
+    width: 100%; /* Make the title wrapper take up as much horizontal space as possible */
 }
 
 .title-icon-wrapper i {
     margin-right: 10px; /* Add some space between the icon and the title */
     color: #008000; /* Green color for the icon */
-    font-size: 25px; /* Increase the size of the icon */
+    font-size: 22px; /* Increase the size of the icon */
+}
+
+
+.title-icon-wrapper h3 {
+    font-size: 22px; /* Increase the size of the icon */
+    margin-top: 7px; /* Add some space above the title */
+    line-height: 1; /* Remove the space below the title */
 }
 
 /* Projects section */
