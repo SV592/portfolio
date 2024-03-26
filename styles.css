@@ -216,7 +216,7 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     position: relative;
-    height: 100vh;
+    min-height: 500px;
 }
 
 
@@ -245,7 +245,6 @@ h1 {
     background-image: radial-gradient(circle, #ccc 1px, transparent 1px);
     background-size: 20px 20px;
 }
-
 /* Adjust the layout for smaller screens */
 @media (max-width: 768px) {
     .about {
@@ -277,6 +276,7 @@ h1 {
     justify-content: center; /* Center the children vertically */
     align-items: center; /* Center the children horizontally */
     flex: 1; /* Make the carousel item take up as much vertical space as possible */;
+    min-height: 500px;
 }
 
 .carousel-item {
@@ -302,23 +302,32 @@ h1 {
     transform: scale(1.05);
 }
 
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 25px; /* Add some space between the items */
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
 .skills-section {
     background-image: radial-gradient(circle, #008000 1px, transparent 1px), radial-gradient(circle, #008000 1px, transparent 1px);
     background-size: 20px 20px; /* Size of the squares */
     background-position: 0 0, 10px 10px; /* Position of the background */
 }
 
-.skills-list {
-    display: grid; /* Use CSS Grid */
-    gap: 10px; /* Add some space between the list items */ 
-    grid-template-columns: repeat(3, 1fr); /* Create two columns */
-    justify-items: start; /* Horizontally center the content of the grid items */
-    align-items: start; /* Vertically center the content of the grid items */
-    list-style-type: none; /* Remove the default list style */
-}
-
-.skills-list li {
-    text-align: left; /* Center the text */
+.row li{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the items vertically */
+    justify-content: center; /* Center the items horizontally */
+    text-align: center; /* Center the text */ 
 }
 
 .skill-icon {
