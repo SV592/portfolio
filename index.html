@@ -363,7 +363,7 @@
                 <div class="paper-preview">
                     <!-- Add a preview for each paper... -->
                     <div class="paper">
-                        <h4>Analyzing Dependency Related Build Breakage in the NPM Ecosystem</h4>
+                        <!-- <h4>Analyzing Dependency Related Build Breakage in the NPM Ecosystem</h4> -->
                         <object data="papers/Analyzing Dependency Related Build Breakage in the NPM Ecosystem.pdf" type="application/pdf" class="paper-item">
                             <!-- Fallback content if PDF is not supported -->
                             <p>This browser does not support PDFs. Please download the PDF to view it: <a href="path-to-your-pdf.pdf">Download PDF</a>.</p>
@@ -371,7 +371,7 @@
                         <button onclick="window.open('papers/Analyzing Dependency Related Build Breakage in the NPM Ecosystem.pdf');">View</button>
                     </div>
                     <div class="paper">
-                        <h4>Code Review Practises On Etherum Smart Contracts</h4>
+                        <!-- <h4>Code Review Practises On Etherum Smart Contracts</h4> -->
                         <object data="papers/Code Review Practises On Etherum Smart Contracts.pdf" type="application/pdf" class="paper-item">
                             <!-- Fallback content if PDF is not supported -->
                             <p>This browser does not support PDFs. Please download the PDF to view it: <a href="path-to-your-pdf.pdf">Download PDF</a>.</p>
@@ -379,7 +379,7 @@
                         <button onclick="window.open('papers/Code Review Practises On Etherum Smart Contracts.pdf');">View</button>
                     </div>
                     <div class="paper">
-                        <h4>Predicting Build Breakage with Machine Learning.</h4>
+                        <!-- <h4>Predicting Build Breakage with Machine Learning.</h4> -->
                         <object data="papers/Predicting Build Breakage with Machine Learning.pdf" type="application/pdf" class="paper-item">
                             <!-- Fallback content if PDF is not supported -->
                             <p>This browser does not support PDFs. Please download the PDF to view it: <a href="path-to-your-pdf.pdf">Download PDF</a>.</p>
@@ -387,7 +387,7 @@
                         <button onclick="window.open('papers/Predicting Build Breakage with Machine Learning.pdf');">View</button>
                     </div>
                     <div class="paper">
-                        <h4>Exploring the Prevalence of Social Biases in State of the Art large language Models</h4>
+                        <!-- <h4>Exploring the Prevalence of Social Biases in State of the Art large language Models</h4> -->
                         <object data="papers/Exploring the Prevalence of Social Biases in State of the Art large language Models.pdf" type="application/pdf" class="paper-item">
                             <!-- Fallback content if PDF is not supported -->
                             <p>This browser does not support PDFs. Please download the PDF to view it: <a href="path-to-your-pdf.pdf">Download PDF</a>.</p>
@@ -398,16 +398,22 @@
             </section>
             
             <section id="contact" class="my-5">
-                <h2 class="text-center">Contact</h2>
-                <div class="card">
-                    <div class="card-body">
-                        <h3 class="card-title">Email</h3>
-                        <p class="card-text">shaquillepearson9@@gmail.com</p>
-                        <h3 class="card-title">Phone</h3>
-                        <p class="card-text">+1-548-333-0349</p>
-                        <!-- Add more contact methods as needed -->
+                <h2>Contact</h2>
+                <form id="contact-form" action="submit_form.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
                     </div>
-                </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Submit</button>
+                </form>
             </section>
 
         </div>

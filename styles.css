@@ -408,14 +408,13 @@ h1 {
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
     flex: 1;
-    overflow: hidden;
 }
 
 
 .paper:hover {
     box-shadow: 0 0 20px rgba(0, 128, 0, 0.5);
     transform: scale(1.05);
-    transition: all 0.3s ease;
+    opacity: 0.8;
 }
 
 .paper h4 {
@@ -458,8 +457,73 @@ h1 {
     text-transform: uppercase; /* Uppercase text */
 }
 
-/* Media queries */
+/* Contact Section */
+#contact {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contact-form {
+    width: 100%;
+    max-width: 600px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+#contact-form:hover {
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.3);
+    transform: scale(1.05);
+    z-index: 2;
+}
+
+#contact-form .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+#contact-form label {
+    margin-bottom: 5px;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px solid #ccc;
+    width: 100%;
+    transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact-form input:focus, #contact-form textarea:focus {
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.3);
+}
+
+#contact-form button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: green;
+}
+
+/* Media queries */
 @media screen and (max-width: 600px) {
     .paper {
         flex: 0 0 100%; /* On screens smaller than 600px, make the papers take up the full width of the container */
