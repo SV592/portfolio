@@ -402,11 +402,12 @@ h1 {
     top: 10px;
     right: 10px;
     font-size: 24px;
-    /* color: #f7df1e; */
+    transition: all 0.3s ease;
 }
 
 #projects .list-group-item:hover .language-icon.python {
     color: #3776ab; /* Change to the hover color for Python icon */
+
 }
 
 #projects .list-group-item:hover .language-icon.javascript {
