@@ -86,22 +86,22 @@ section ul li {
 
 
 /* Footer styles */
-/* Footer styles */
 footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    display: flex; /* Add this */
-    justify-content: center; /* Add this */
-    align-items: center; /* Add this */
+    display: flex;
+    justify-content: center; 
+    align-items: center;
     background-color: #333;
+    z-index: 100; 
 }
 
 .footer-center {
-    display: flex; /* Change this */
-    align-items: center; /* Change this */
-    padding: 10px; /* Added padding for spacing */
-    justify-content: center; /* Center the content */
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
     color: white;
     font-size: 18px;
 }
@@ -395,6 +395,76 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 128, 0, 0.3);
     transform: scale(1.05);
     z-index: 2;
+}
+
+.language-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    /* color: #f7df1e; */
+}
+
+#projects .list-group-item:hover .language-icon.python {
+    color: #3776ab; /* Change to the hover color for Python icon */
+}
+
+#projects .list-group-item:hover .language-icon.javascript {
+    color: #f7df1e; /* Change to the hover color for JavaScript icon */
+}
+
+#projects .list-group-item:hover .language-icon.java {
+    color: #e34c26; /* Change to the hover color for HTML icon */
+}
+
+.project-details {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.github-link:hover,
+.live-demo:hover {
+    color: white;
+    text-decoration: none;
+    transform: scale(1.05);
+}
+
+.live-demo {
+    display: inline-block;
+    padding: 4px 15px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.live-demo:hover {
+    background-color: green;
+}
+
+.github-link {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.github-link:hover {
+    background-color: green;
+}
+
+.github-link i{
+    font-size: 18px;
+}
+
+.live-demo i {
+    font-size: 15px;
 }
 
 
