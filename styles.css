@@ -21,6 +21,12 @@ body {
     font-optical-sizing: auto;
 }
 
+h2 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+
 /* Header styles */
 header {
     text-align: center;
@@ -126,7 +132,6 @@ footer {
 }
 
 
-
 /* Other styles */
 h1 {
     font-size: 36px;
@@ -205,10 +210,21 @@ h1 {
     margin-right: 20px; /* Add space to the right of the image */
 }
 
-#about h2 {
-    text-align: center;
+#about {
+    position: relative;
 }
 
+#about .fa-address-card {
+    position: absolute; /* This allows the icon to be positioned relative to the about section */
+    top: 10px; /* Adjust this value to move the icon vertically */
+    right: 10px; /* Adjust this value to move the icon horizontally */
+    font-size: 25px; /* Adjust the size of the icon */
+}
+
+#about:hover .fa-address-card {
+    color: #008000; /* Change the color on hover */
+    transition: color 0.3s ease; /* Add a transition effect */
+}
 
 .about-content{
     display: flex;
@@ -240,11 +256,6 @@ h1 {
     font-size: 1em; /* Use ems instead of pixels */
     max-width: 90%; /* Use percentage instead of pixels */
     margin: 0 auto;;
-}
-
-.pattern {
-    background-image: radial-gradient(circle, #ccc 1px, transparent 1px);
-    background-size: 20px 20px;
 }
 
 /* Adjust the layout for smaller screens */
@@ -298,15 +309,15 @@ h1 {
 }
 
 #skillsCarousel:hover .languages {
-    color: #008000; /* Green for languages */
+    color: green; /* Green for languages */
 }
 
 #skillsCarousel:hover .frameworks {
-    color: purple; /* Blue for frameworks */
+    color: green; /* Blue for frameworks */
 }
 
 #skillsCarousel:hover .technologies {
-    color: maroon; /* Red for technologies */
+    color: green; /* Red for technologies */
 }
 
 #skillsCarousel:hover {
@@ -428,16 +439,16 @@ h1 {
 }
 
 #projects .list-group-item:hover .language-icon.python {
-    color: #3776ab; /* Change to the hover color for Python icon */
+    color: green; /* Change to the hover color for Python icon */
 
 }
 
 #projects .list-group-item:hover .language-icon.javascript {
-    color: #f7df1e; /* Change to the hover color for JavaScript icon */
+    color: green; /* Change to the hover color for JavaScript icon */
 }
 
 #projects .list-group-item:hover .language-icon.java {
-    color: #e34c26; /* Change to the hover color for HTML icon */
+    color: green; /* Change to the hover color for HTML icon */
 }
 
 .project-details {
@@ -554,7 +565,7 @@ h1 {
     position: absolute;
     top: 10px;
     right: 10px;
-    font-size: 20px;
+    font-size: 22px;
     color: black;
 }
 
@@ -563,15 +574,15 @@ h1 {
 }
 
 .paper:hover .paper-icon.ethereum {
-    color: purple; /* Change to the hover color for JavaScript icon */
+    color: green; /* Change to the hover color for JavaScript icon */
 }
 
 .paper:hover .paper-icon.predict {
-    color: gold; /* Change to the hover color for HTML icon */
+    color: green; /* Change to the hover color for HTML icon */
 }
 
 .paper:hover .paper-icon.social {
-    color: skyblue; /* Change to the hover color for HTML icon */
+    color: green; /* Change to the hover color for HTML icon */
 }
 
 /* Contact Section */
