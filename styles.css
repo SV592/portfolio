@@ -287,6 +287,26 @@ h1 {
     flex-direction: column;
     justify-content: flex-start; /* align the content to the top */
     align-items: center;
+    position: relative;
+}
+
+.carousel-icon {
+    position: absolute; /* This allows the icon to be positioned relative to the carousel item */
+    top: 0px; /* Aligns the icon with the top of the carousel item */
+    right: 20px; /* Aligns the icon with the right of the carousel item */
+    font-size: 20px;
+}
+
+#skillsCarousel:hover .languages {
+    color: #008000; /* Green for languages */
+}
+
+#skillsCarousel:hover .frameworks {
+    color: purple; /* Blue for frameworks */
+}
+
+#skillsCarousel:hover .technologies {
+    color: maroon; /* Red for technologies */
 }
 
 #skillsCarousel:hover {
