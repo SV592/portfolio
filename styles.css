@@ -205,7 +205,12 @@ h1 {
     margin-right: 20px; /* Add space to the right of the image */
 }
 
-#about {
+#about h2 {
+    text-align: center;
+}
+
+
+.about-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -216,12 +221,8 @@ h1 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     position: relative;
-    min-height: 500px;
-}
-
-
-.about-content{
-    margin-top: 10px;
+    min-height: 400px;
+    transition: all 0.3s ease;
 }
 
 #about .img-fluid {
@@ -229,7 +230,7 @@ h1 {
     margin: 0 auto; /* Center the image horizontally */
 }
 
-#about:hover {
+.about-content:hover {
     box-shadow: 0 0 10px rgba(0, 128, 0, 0.3); /* darker green shadow on hover */
     transform: scale(1.05);
 }
@@ -245,6 +246,7 @@ h1 {
     background-image: radial-gradient(circle, #ccc 1px, transparent 1px);
     background-size: 20px 20px;
 }
+
 /* Adjust the layout for smaller screens */
 @media (max-width: 768px) {
     .about {
@@ -276,7 +278,7 @@ h1 {
     justify-content: center; /* Center the children vertically */
     align-items: center; /* Center the children horizontally */
     flex: 1; /* Make the carousel item take up as much vertical space as possible */;
-    min-height: 500px;
+    min-height: 400px;
 }
 
 .carousel-item {
