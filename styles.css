@@ -113,13 +113,12 @@ footer {
     padding: 10px;
     justify-content: center;
     color: white;
-    font-size: 18px;
 }
 
 /* Social icons styles */
 .footer-center a {
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     justify-content: center;
 }
 
