@@ -46,6 +46,7 @@ header nav a {
     color: white;
     margin: 0 10px;
     text-decoration: none;
+    font-size: 18px;
 }
 
 .navbar-nav .nav-link:hover {
@@ -113,12 +114,13 @@ footer {
     padding: 10px;
     justify-content: center;
     color: white;
+    font-size: 18px;
 }
 
 /* Social icons styles */
 .footer-center a {
     color: white;
-    font-size: 15px;
+    font-size: 20px;
     justify-content: center;
 }
 
