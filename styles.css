@@ -203,9 +203,22 @@ h1 {
     padding: 0 !important;
 }
 
-.list-group-item:hover {
-    background-color: #f8f9fa;
+.paper button {
+    position: relative;
+    padding: 5px 10px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 0.9em; /* Smaller text */
+    transition: all 0.3s ease;
+    text-transform: uppercase; /* Uppercase text */
+}
+
+.paper button:hover {
+    background-color: green;
+    transform: scale(1.05);
 }
 
 .img-fluid {
@@ -217,6 +230,7 @@ h1 {
     margin-right: 20px; /* Add space to the right of the image */
 }
 
+/* About section */
 #about {
     position: relative;
 }
@@ -472,33 +486,24 @@ h1 {
     transform: scale(1.05);
 }
 
-.live-demo {
-    display: inline-block;
-    padding: 4px 15px;
+
+.github-link, .live-demo {
+    position: relative;
+    padding: 5px 10px;
     background-color: black;
-    color: white;
-    text-decoration: none;
+    color: #fff;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em; /* Smaller text */
     transition: all 0.3s ease;
+    text-transform: uppercase; /* Uppercase text */
+    display: inline-block; /* To apply padding and background color */
 }
 
-.live-demo:hover {
+.github-link:hover, .live-demo:hover {
     background-color: green;
-}
-
-.github-link {
-    display: inline-block;
-    padding: 4px 10px;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    margin-right: 10px;
-}
-
-.github-link:hover {
-    background-color: green;
+    transform: scale(1.05);
 }
 
 .github-link i{
@@ -645,13 +650,16 @@ h1 {
 }
 
 #contact-form button {
-    padding: 10px 20px;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    border: none;
+    position: relative;
+    padding: 5px 10px;
     background-color: black;
-    color: white;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    font-size: 0.9em; /* Smaller text */
+    transition: all 0.3s ease;
+    text-transform: uppercase; /* Uppercase text */
 }
 
 #contact-form button:hover {
