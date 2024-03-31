@@ -186,7 +186,7 @@ h1 {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .paper {
@@ -194,10 +194,12 @@ h1 {
     padding: 20px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .paper-preview {
     flex-grow: 1;
+    padding: 0 !important;
 }
 
 .list-group-item:hover {
@@ -390,6 +392,7 @@ h1 {
     align-items: center; /*Vertically center the icon and the title */
     justify-content: flex-start; /* Align the icon and the title to the left */
     width: 100%; /* Make the title wrapper take up as much horizontal space as possible */
+    padding: 0;
 }
 
 .title-icon-wrapper i {
