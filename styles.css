@@ -235,10 +235,33 @@ h1 {
 }
 
 #about p {
-    color: #777; /* grey text */
     font-size: 1em; /* Use ems instead of pixels */
     max-width: 90%; /* Use percentage instead of pixels */
     margin: 0 auto;;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: green;
+    text-decoration: none;
+    color: white;
 }
 
 /* Adjust the layout for smaller screens */
@@ -414,12 +437,30 @@ h1 {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    width: 50%;
+    width: 100%;
     text-align: center;
     display: flex;
     flex-direction: column;
     position: relative;
 }
+/* .experience-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: green;
+    transition: width 0.3s ease-in-out;
+}
+
+.experience-item:hover::before {
+    width: 100%;
+} */
+
+/* .experience-item:hover .experience-date {
+    color: green;
+} */
 
 .experience-item:hover {
     box-shadow: 0 0 10px rgba(0, 128, 0, 0.3); 
@@ -458,8 +499,6 @@ h1 {
     width: 1em;
 }
 
-
-/* Tree structure */
 .experience-row {
     display: flex;
     justify-content: space-between;
@@ -531,7 +570,7 @@ h1 {
 .live-demo:hover {
     color: white;
     text-decoration: none;
-    transform: scale(1.05);
+    background-color: green;
 }
 
 
@@ -547,11 +586,6 @@ h1 {
     transition: all 0.3s ease;
     text-transform: uppercase; /* Uppercase text */
     display: inline-block; /* To apply padding and background color */
-}
-
-.github-link:hover, .live-demo:hover {
-    background-color: green;
-    transform: scale(1.05);
 }
 
 .github-link i{
@@ -624,7 +658,6 @@ h1 {
 
 .paper button:hover {
     background-color: green;
-    transform: translateX(-50%) scale(1.05);
 }
 
 .paper .paper-icon {
