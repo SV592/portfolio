@@ -64,7 +64,6 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
     scroll-margin-top: 60px;
     flex-direction: column;
     flex: 1;
@@ -94,52 +93,19 @@ section ul li {
 }
 
 
-/* Footer styles */
-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    background-color: #343a40;
-    z-index: 100; 
-}
-
-.footer-center {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    justify-content: center;
-    color: white;
-    font-size: 18px;
-}
-
-/* Social icons styles */
-.footer-center a {
-    color: white;
-    font-size: 20px;
-    justify-content: center;
-}
-
-.footer-center a:last-child {
-    margin-right: 0; /* Add this */
-}
-
-.footer-center a:hover {
-    color: green;
-}
-
-.footer-center p {
-    margin: 0;
-}
-
-
 /* Other styles */
 h1 {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
+}
+
+p, li {
+    color: #777;
+}
+
+.font-color {
+    color: black;
 }
 
 .close {
@@ -180,16 +146,6 @@ h1 {
 .card:hover {
     background-color: #f5f5f5;
 }
-
-.img-fluid {
-    max-width: 150px;
-    max-height: 150px;
-    border-radius: 50%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    margin-right: 20px; /* Add space to the right of the image */
-}
-
 
 
 /* About section */
@@ -263,6 +219,35 @@ h1 {
     text-decoration: none;
     color: white;
 }
+
+.img-fluid {
+    max-width: 150px;
+    max-height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    margin-right: 20px; /* Add space to the right of the image */
+}
+
+.about-icons {
+    display: flex;
+    flex-direction: row; /* Change this from column to row */
+    font-size: 25px;
+    transition: all 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.about-icons a {
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.about-icons a:hover {
+    color: green;
+}
+
 
 /* Adjust the layout for smaller screens */
 @media (max-width: 768px) {
@@ -509,6 +494,7 @@ h1 {
     width: calc(50% - 10px);
 }
 
+
 /* Projects section */
 #projects{
     /* background-color: #ffffff; White background */
@@ -544,20 +530,14 @@ h1 {
     right: 10px;
     font-size: 25px;
     transition: all 0.3s ease;
+    color: black;
 }
 
-#projects .list-group-item:hover .language-icon.python {
+#projects .list-group-item:hover .language-icon {
     color: green; /* Change to the hover color for Python icon */
 
 }
 
-#projects .list-group-item:hover .language-icon.javascript {
-    color: green; /* Change to the hover color for JavaScript icon */
-}
-
-#projects .list-group-item:hover .language-icon.java {
-    color: green; /* Change to the hover color for HTML icon */
-}
 
 .project-details {
     display: flex;
@@ -624,9 +604,7 @@ h1 {
     color: black; /* Darker text color */
 }
 
-.paper p {
-    font-size: 16px;
-    color: #777;
+.paper p { 
     margin-bottom: 30px;
     text-align: center;
 }
@@ -690,6 +668,62 @@ h1 {
     .paper {
         flex: 0 0 100%; /* On screens smaller than 600px, make the papers take up the full width of the container */
     }
+}
+
+/* Footer styles */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: #343a40;
+    z-index: 100; 
+}
+
+.footer-center {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    flex-direction: column;
+}
+
+/* Social icons styles */
+.footer-center a {
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.footer-row{
+    display: flex;
+    gap: 20px;
+
+}
+
+.footer-center p{
+    color: white;
+}
+
+.footer-center a:last-child {
+    margin-right: 0; /* Add this */
+}
+
+.footer-center a:hover {
+    color: green;
+}
+
+.footer-center p {
+    margin: 0;
+}
+
+.text-sm{
+    font-size: 0.8em;
 }
 
 @media (max-width: 600px) {
