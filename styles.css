@@ -1,868 +1,853 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 /* Reset default styles */
-body, html {
-    margin: 0;
-    height: 100%;
+body,
+html {
+  margin: 0;
+  height: 100%;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    padding-top: 0;
-    background-color: #f2f2f2;
-    font-family: 'Nunito Sans', sans-serif;
-    color: #333;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    font-optical-sizing: auto;
+  padding-top: 0;
+  background-color: #f2f2f2;
+  font-family: "Nunito Sans", sans-serif;
+  color: #333;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  font-optical-sizing: auto;
 }
 
 h2 {
-    text-align: center;
+  text-align: center;
 }
 
 /* Header styles */
 .navbar-dark .navbar-nav .nav-link {
-    color: white !important;
+  color: white !important;
 }
 
 header {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    height: 60px;
-    overflow: hidden; /* This is needed to apply the border radius to the inner elements */
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  height: 60px;
+  overflow: hidden; /* This is needed to apply the border radius to the inner elements */
 }
 
 header nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-    font-size: 18px;
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .navbar-nav .nav-link:hover {
-    color: green !important;
+  color: green !important;
 }
 
 header h1 {
-    margin: 0;
+  margin: 0;
 }
 
 /* Main content styles */
 main {
-    padding-top: 60px;
+  padding-top: 60px;
 }
 
 section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    scroll-margin-top: 60px;
-    flex-direction: column;
-    flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-margin-top: 60px;
+  flex-direction: column;
+  flex: 1;
 }
 
-section > div {  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin: 20px 0; /* Add vertical margin */
-    padding: 20px 0; /* Add vertical padding */
+section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin: 20px 0; /* Add vertical margin */
+  padding: 20px 0; /* Add vertical padding */
 }
-
 
 section ul {
-    list-style-type: none;
-    padding: 0;
-    width: 100%; /* Take up the full width */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
+  list-style-type: none;
+  padding: 0;
+  width: 100%; /* Take up the full width */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 section ul li {
-    margin-bottom: 10px;
-    text-align: center; /* Center the text */
+  margin-bottom: 10px;
+  text-align: center; /* Center the text */
 }
-
 
 /* Other styles */
 h1 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-p, li {
-    color: #777;
+p,
+li {
+  color: #777;
 }
 
 .font-color {
-    color: black;
+  color: black;
 }
 
 .close {
-    position: absolute;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
 .close:hover,
 .close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
 }
 
 .card {
-    transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .card:hover {
-    background-color: #f5f5f5;
+  background-color: #f5f5f5;
 }
-
 
 /* About section */
 #about {
-    position: relative;
+  position: relative;
 }
 
 #about .fa-address-card {
-    position: absolute; /* This allows the icon to be positioned relative to the about section */
-    top: 10px; /* Adjust this value to move the icon vertically */
-    right: 10px; /* Adjust this value to move the icon horizontally */
-    font-size: 25px; /* Adjust the size of the icon */
+  position: absolute; /* This allows the icon to be positioned relative to the about section */
+  top: 10px; /* Adjust this value to move the icon vertically */
+  right: 10px; /* Adjust this value to move the icon horizontally */
+  font-size: 25px; /* Adjust the size of the icon */
 }
 
 #about:hover .fa-address-card {
-    color: #008000; /* Change the color on hover */
-    transition: color 0.3s ease; /* Add a transition effect */
+  color: #008000; /* Change the color on hover */
+  transition: color 0.3s ease; /* Add a transition effect */
 }
 
-.about-content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    background-color: #f9f9f9;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    position: relative;
-    min-height: 450px;
-    transition: all 0.3s ease;
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  min-height: 450px;
+  transition: all 0.3s ease;
 }
 
 #about .img-fluid {
-    align-self: center; /* Align this item to the center */
-    margin: 0 auto; /* Center the image horizontally */
+  align-self: center; /* Align this item to the center */
+  margin: 0 auto; /* Center the image horizontally */
 }
 
 .about-content:hover {
-    box-shadow: 0 0 10px rgba(0, 128, 0, 0.3); /* darker green shadow on hover */
-    transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.3); /* darker green shadow on hover */
+  transform: scale(1.05);
 }
 
 #about p {
-    font-size: 1em; /* Use ems instead of pixels */
-    max-width: 90%; /* Use percentage instead of pixels */
-    margin: 0 auto;;
+  font-size: 1em; /* Use ems instead of pixels */
+  max-width: 90%; /* Use percentage instead of pixels */
+  margin: 0 auto;
 }
 
 .button-container {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
 }
 
 .button {
-    background-color: black;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-    outline: none;
-    text-transform: uppercase;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  outline: none;
+  text-transform: uppercase;
 }
 
+.button:focus {
+    border: none;
+    outline: none;
+  }
+
 .button:hover {
-    background-color: green;
-    text-decoration: none;
-    color: white;
+  background-color: green;
+  text-decoration: none;
+  color: white;
+  border: none;
 }
 
 .img-fluid {
-    max-width: 150px;
-    max-height: 150px;
-    border-radius: 50%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    margin-right: 20px; /* Add space to the right of the image */
+  max-width: 150px;
+  max-height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin-right: 20px; /* Add space to the right of the image */
 }
 
 .about-icons {
-    display: flex;
-    flex-direction: row; /* Change this from column to row */
-    font-size: 25px;
-    transition: all 0.3s ease;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  flex-direction: row; /* Change this from column to row */
+  font-size: 25px;
+  transition: all 0.3s ease;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 .about-icons a {
-    color: black;
-    transition: color 0.3s ease;
+  color: black;
+  transition: color 0.3s ease;
 }
 
 .about-icons a:hover {
-    color: green;
+  color: green;
 }
-
 
 /* Adjust the layout for smaller screens */
 @media (max-width: 768px) {
-    .about {
-        padding: 1em; /* Use smaller padding */
-    }
+  .about {
+    padding: 1em; /* Use smaller padding */
+  }
 
-    .about h2 {
-        font-size: 1.5em; /* Use smaller font size */
-    }
+  .about h2 {
+    font-size: 1.5em; /* Use smaller font size */
+  }
 
-    .about p {
-        font-size: 0.9em; /* Use smaller font size */
-        max-width: 100%; /* Make the text take up the full width */
-    }
+  .about p {
+    font-size: 0.9em; /* Use smaller font size */
+    max-width: 100%; /* Make the text take up the full width */
+  }
 
-    section {
-        flex-direction: row; /* Stack the items horizontally */
-    }
+  section {
+    flex-direction: row; /* Stack the items horizontally */
+  }
 }
 
-
-
 /* Skills section */
-.skills{
-    margin-top: 20px;
+.skills {
+  margin-top: 20px;
 }
 
 #skillsCarousel {
-    border-radius: 15px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
-    display: flex; /* Use Flexbox */
-    flex-direction: column; /* Stack the children vertically */
-    justify-content: center; /* Center the children vertically */
-    align-items: center; /* Center the children horizontally */
-    flex: 1; /* Make the carousel item take up as much vertical space as possible */;
-    min-height: 450px;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Stack the children vertically */
+  justify-content: center; /* Center the children vertically */
+  align-items: center; /* Center the children horizontally */
+  flex: 1; /* Make the carousel item take up as much vertical space as possible */
+  min-height: 450px;
 }
 
-
 .carousel-item {
-    height: 100%; /* make the carousel items fill the height of the carousel */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; /* align the content to the top */
-    align-items: center;
-    position: relative;
+  height: 100%; /* make the carousel items fill the height of the carousel */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* align the content to the top */
+  align-items: center;
+  position: relative;
 }
 
 .carousel-icon {
-    position: absolute; /* This allows the icon to be positioned relative to the carousel item */
-    top: 0px; /* Aligns the icon with the top of the carousel item */
-    right: 20px; /* Aligns the icon with the right of the carousel item */
-    font-size: 20px;
+  position: absolute; /* This allows the icon to be positioned relative to the carousel item */
+  top: 0px; /* Aligns the icon with the top of the carousel item */
+  right: 20px; /* Aligns the icon with the right of the carousel item */
+  font-size: 20px;
 }
 
 #skillsCarousel:hover .languages {
-    color: green; /* Green for languages */
+  color: green; /* Green for languages */
 }
 
 #skillsCarousel:hover .frameworks {
-    color: green; /* Blue for frameworks */
+  color: green; /* Blue for frameworks */
 }
 
 #skillsCarousel:hover .technologies {
-    color: green; /* Red for technologies */
+  color: green; /* Red for technologies */
 }
 
 #skillsCarousel:hover {
-    box-shadow: 0 0 10px rgba(0, 128, 0, 0.3); /* darker green shadow on hover */
-    transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.3); /* darker green shadow on hover */
+  transform: scale(1.05);
 }
 
 .carousel-control-prev i,
 .carousel-control-next i {
-    color: black; /* Change this to the color you want */
+  color: black; /* Change this to the color you want */
 }
 
 .carousel-control-prev :hover,
 .carousel-control-next :hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .skills-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .row {
-    display: flex;
-    justify-content: center;
-    gap: 25px; /* Add some space between the items */
-    margin-bottom: 25px;
-    margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 25px; /* Add some space between the items */
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .skills-section {
-    background-image: radial-gradient(circle, #008000 1px, transparent 1px), radial-gradient(circle, #008000 1px, transparent 1px);
-    background-size: 20px 20px; /* Size of the squares */
-    background-position: 0 0, 10px 10px; /* Position of the background */
+  background-image: radial-gradient(circle, #008000 1px, transparent 1px),
+    radial-gradient(circle, #008000 1px, transparent 1px);
+  background-size: 20px 20px; /* Size of the squares */
+  background-position: 0 0, 10px 10px; /* Position of the background */
 }
 
-.row li{
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center the items vertically */
-    justify-content: center; /* Center the items horizontally */
-    text-align: center; /* Center the text */ 
+.row li {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the items vertically */
+  justify-content: center; /* Center the items horizontally */
+  text-align: center; /* Center the text */
 }
 
 .skill-icon {
-    align-self: center; /* Vertically center the icon */
+  align-self: center; /* Vertically center the icon */
 }
 
 .skills-list li i {
-    margin-right: 10px; /* Add some space between the icon and the skill name */
+  margin-right: 10px; /* Add some space between the icon and the skill name */
 }
 
 .star-rating {
-    display: inline-block;
-    margin-left: 10px;
+  display: inline-block;
+  margin-left: 10px;
 }
 
 .star-rating i {
-    color: #008000;
-    font-size: 16px; /* Increase the size of the stars */
+  color: #008000;
+  font-size: 16px; /* Increase the size of the stars */
 }
 
 .title-icon-wrapper {
-    display: flex; /* Use flexbox to align the icon and the title */
-    align-items: center; /*Vertically center the icon and the title */
-    justify-content: center; /* Align the icon and the title to the left */
-    width: 100%; /* Make the title wrapper take up as much horizontal space as possible */
-    padding: 0;
+  display: flex; /* Use flexbox to align the icon and the title */
+  align-items: center; /*Vertically center the icon and the title */
+  justify-content: center; /* Align the icon and the title to the left */
+  width: 100%; /* Make the title wrapper take up as much horizontal space as possible */
+  padding: 0;
 }
 
 .title-icon-wrapper i {
-    margin-right: 10px; /* Add some space between the icon and the title */
-    color: #008000; /* Green color for the icon */
-    font-size: 22px; /* Increase the size of the icon */
+  margin-right: 10px; /* Add some space between the icon and the title */
+  color: #008000; /* Green color for the icon */
+  font-size: 22px; /* Increase the size of the icon */
 }
-
 
 .title-icon-wrapper h3 {
-    font-size: 22px; /* Increase the size of the icon */
-    margin-top: 7px; /* Add some space above the title */
-    line-height: 1; /* Remove the space below the title */
+  font-size: 22px; /* Increase the size of the icon */
+  margin-top: 7px; /* Add some space above the title */
+  line-height: 1; /* Remove the space below the title */
 }
-
 
 /* Experience section */
 .section-title {
-    font-size: 2em;
-    color: #333;
-    text-align: center;
+  font-size: 2em;
+  color: #333;
+  text-align: center;
 }
 
-
 #experience {
-    padding: 20px;
+  padding: 20px;
 }
 
 .experience-content {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 0;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  align-items: center;
 }
 
 .experience-item {
-    background-color: #f9f9f9;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    width: 100%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
-/* .experience-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background: green;
-    transition: width 0.3s ease-in-out;
-}
-
-.experience-item:hover::before {
-    width: 100%;
-} */
-
-/* .experience-item:hover .experience-date {
-    color: green;
-} */
 
 .experience-item:hover {
-    box-shadow: 0 0 10px rgba(0, 128, 0, 0.3); 
-    transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.3);
+  transform: scale(1.05);
 }
 
 .experience-item:hover .icon-container i {
-    color: green;
+  color: green;
 }
 
 .experience-text {
-    font-size: 1em;
-    color: #666;
+  font-size: 1em;
+  color: #666;
 }
 
 .experience-date {
-    font-size: 0.9em;
-    color: #999;
-    text-align: right;
+  font-size: 0.9em;
+  color: #999;
+  text-align: right;
 }
 
 .icon-container {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 .experience-content ul {
-    list-style-type: none;
-    padding-left: 20px;
+  list-style-type: none;
+  padding-left: 20px;
 }
 
 .experience-content ul li::before {
-    content: '•';
-    display: inline-block;
-    width: 1em;
+  content: "•";
+  display: inline-block;
+  width: 1em;
 }
 
 .experience-row {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .experience-row .experience-item {
-    width: calc(50% - 10px);
+  width: calc(50% - 10px);
 }
 
+.experience-item ul {
+  display: none;
+}
+
+.experience-button {
+  align-self: center; /* Add this line */
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  border: none;
+  outline: none;
+}
+
+.experience-button:hover {
+  background-color: green; /* Add this line */
+  cursor: pointer; /* Add this line */
+}
+
+.experience-button:focus {
+  border: none;
+  outline: none;
+}
+
+/* .experience-button:active {
+  border: none;
+  outline: none;
+  transform: scale(1.1);
+} */
 
 /* Projects section */
-#projects{
-    /* background-color: #ffffff; White background */
-    padding: 0; /* No padding */
-    position: relative;
-    flex: 1;
+#projects {
+  /* background-color: #ffffff; White background */
+  padding: 0; /* No padding */
+  position: relative;
+  flex: 1;
 }
 
 #projects h2 {
-    text-align: center; /* Centered title */
-    margin-bottom: 20px; /* Space below the title */
+  text-align: center; /* Centered title */
+  margin-bottom: 20px; /* Space below the title */
 }
 
 #projects .list-group-item {
-    background-color: #f9f9f9; /* Light grey background */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
-    margin-bottom: 20px; /* Space below each card */
-    transition: all 0.3s ease;
-    padding: 20px; /* Some padding */
-    border: 0px  
+  background-color: #f9f9f9; /* Light grey background */
+  border-radius: 15px; /* Rounded corners */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Space below each card */
+  transition: all 0.3s ease;
+  padding: 20px; /* Some padding */
+  border: 0px;
 }
 
 #projects .list-group-item:hover {
-    box-shadow: 0 0 10px rgba(0, 128, 0, 0.3);
-    transform: scale(1.05);
-    z-index: 2;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.3);
+  transform: scale(1.05);
+  z-index: 2;
 }
 
 .language-icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 25px;
-    transition: all 0.3s ease;
-    color: black;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 25px;
+  transition: all 0.3s ease;
+  color: black;
 }
 
 #projects .list-group-item:hover .language-icon {
-    color: green; /* Change to the hover color for Python icon */
-
+  color: green; /* Change to the hover color for Python icon */
 }
 
-
 .project-details {
-    display: flex;
-    gap: 10px;
-    margin-top: 10px;
-    justify-content: center;
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: center;
 }
 
 .github-link:hover,
 .live-demo:hover {
-    color: white;
-    text-decoration: none;
-    background-color: green;
+  color: white;
+  text-decoration: none;
+  background-color: green;
 }
 
-
-.github-link, .live-demo {
-    position: relative;
-    padding: 5px 10px;
-    background-color: black;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.9em; /* Smaller text */
-    transition: all 0.3s ease;
-    text-transform: uppercase; /* Uppercase text */
-    display: inline-block; /* To apply padding and background color */
+.github-link,
+.live-demo {
+  position: relative;
+  padding: 5px 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em; /* Smaller text */
+  transition: all 0.3s ease;
+  text-transform: uppercase; /* Uppercase text */
+  display: inline-block; /* To apply padding and background color */
 }
 
-.github-link i{
-    font-size: 18px;
+.github-link i {
+  font-size: 18px;
 }
 
 .live-demo i {
-    font-size: 15px;
+  font-size: 15px;
 }
-
 
 /* Papers Section */
 .paper {
-    border: 0px solid #ddd; /* Lighter border color */
-    border-radius: 15px; /* Less rounded corners */
-    background-color: #f9f9f9; /* White background */
-    transition: all 0.3s ease;
-    position: relative;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    margin-bottom: 10px;
+  border: 0px solid #ddd; /* Lighter border color */
+  border-radius: 15px; /* Less rounded corners */
+  background-color: #f9f9f9; /* White background */
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin-bottom: 10px;
 }
 
-
 .paper:hover {
-    box-shadow: 0 0 20px rgba(0, 128, 0, 0.5);
-    transform: scale(1.05);
-    opacity: 0.8;
+  box-shadow: 0 0 20px rgba(0, 128, 0, 0.5);
+  transform: scale(1.05);
+  opacity: 0.8;
 }
 
 .paper h4 {
-    text-align: center;
-    color: black; /* Darker text color */
+  text-align: center;
+  color: black; /* Darker text color */
 }
 
-.paper p { 
-    margin-bottom: 30px;
-    text-align: center;
+.paper p {
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .paper-preview {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    grid-template-rows: repeat(2, 1fr); /* 2 rows */
-    gap: 20px; /* Adjust as needed */
-    justify-content: space-between;
-    padding: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  grid-template-rows: repeat(2, 1fr); /* 2 rows */
+  gap: 20px; /* Adjust as needed */
+  justify-content: space-between;
+  padding: 0;
 }
 
 .paper button {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 5px 10px;
-    background-color: black;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 0.9em; /* Smaller text */
-    transition: all 0.3s ease;
-    text-transform: uppercase; /* Uppercase text */
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9em; /* Smaller text */
+  transition: all 0.3s ease;
+  text-transform: uppercase; /* Uppercase text */
+}
+
+.paper button:focus {
+  border: none;
+  outline: none;
 }
 
 .paper button:hover {
-    background-color: green;
+  background-color: green;
 }
 
 .paper .paper-icon {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 22px;
-    color: black;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 22px;
+  color: black;
 }
 
-.paper:hover .paper-icon.npm {
-    color: green; /* Change to the hover color for Python icon */
-}
-
-.paper:hover .paper-icon.ethereum {
-    color: green; /* Change to the hover color for JavaScript icon */
-}
-
-.paper:hover .paper-icon.predict {
-    color: green; /* Change to the hover color for HTML icon */
-}
-
-.paper:hover .paper-icon.social {
-    color: green; /* Change to the hover color for HTML icon */
-}
-
-
-/* Media queries */
-@media screen and (max-width: 600px) {
-    .paper {
-        flex: 0 0 100%; /* On screens smaller than 600px, make the papers take up the full width of the container */
-    }
+.paper:hover .paper-icon {
+  color: green; /* Change to the hover color for Python icon */
 }
 
 /* Footer styles */
 footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    display: flex;
-    justify-content: center; 
-    align-items: center;
-    background-color: #343a40;
-    z-index: 100; 
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #343a40;
+  z-index: 100;
 }
 
 .footer-center {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    justify-content: center;
-    color: white;
-    font-size: 18px;
-    transition: all 0.3s ease;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  flex-direction: column;
 }
 
 /* Social icons styles */
 .footer-center a {
-    color: white;
-    font-size: 20px;
-    justify-content: center;
-}
-
-.footer-row{
-    display: flex;
-    gap: 20px;
-
-}
-
-.footer-center p{
-    color: white;
-}
-
-.footer-center a:last-child {
-    margin-right: 0; /* Add this */
-}
-
-.footer-center a:hover {
-    color: green;
+  color: white;
+  font-size: 20px;
+  justify-content: center;
 }
 
 .footer-center p {
-    margin: 0;
-}
-
-.text-sm{
-    font-size: 0.8em;
-}
-
-@media (max-width: 600px) {
-    #skills {
-        position: relative; /* Add this line */
-    }
-
-    #skills .skill {
-        position: absolute; /* Change this line */
-        width: 100%; /* Add this line */
-        z-index: 1; /* All skills have the same z-index by default */
-    }
-
-    #skills .skill:hover {
-        z-index: 2; /* The hovered skill has a higher z-index */
-    }
-}
-
-
-@media (max-width: 600px) {
-    header {
-        height: 80px;
-    }
-
-    section {
-        flex-direction: column;
-        height: calc(100vh - 80px);
-        gap: 20vh;
-        scroll-margin-top: 80px;
-    }
-
-    section::before {
-        height: 80px;
-        margin: -80px 0 0;
-    }
-
-    h1, h2 {
-        font-size: 1.5em;
-    }
+  color: white;
+  font-size: 0.8em;
+  margin: 0;
 }
 
 /* Styles for larger screens */
-h1, h2 {
-    font-size: 2em;
-    line-height: 1.5;
-}
-
-/* Styles for medium screens */
-@media (max-width: 1024px) {
-    h1, h2 {
-        font-size: 1.75em;
-        line-height: 1.4;
-    }
-}
-
-/* Styles for small screens */
-@media (max-width: 768px) {
-    h1, h2 {
-        font-size: 1.5em;
-        line-height: 1.3;
-    }
+h1,
+h2 {
+  font-size: 2em;
+  line-height: 1.5;
 }
 
 /* Styles for larger screens */
 p {
-    font-size: 1em;
-    line-height: 1.5;
-    margin: 0 0 1em;
-}
-
-/* Styles for medium screens */
-@media (max-width: 1024px) {
-    p {
-        font-size: 0.9em;
-        line-height: 1.4;
-        margin: 0 0 0.9em;
-        margin-top: 1.5em;
-    }
-}
-
-/* Styles for small screens */
-@media (max-width: 768px) {
-    p {
-        font-size: 0.8em;
-        line-height: 1.3;
-        margin: 0 0 0.8em;
-        margin-top: 2em;
-    }
+  font-size: 1em;
+  line-height: 1.5;
+  margin: 0 0 1em;
 }
 
 /* Styles for larger screens */
-.profile-pic, .social-icons {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+.profile-pic,
+.social-icons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media (max-width: 600px) {
+  #skills {
+    position: relative; /* Add this line */
+  }
+
+  #skills .skill {
+    position: absolute; /* Change this line */
+    width: 100%; /* Add this line */
+    z-index: 1; /* All skills have the same z-index by default */
+  }
+
+  #skills .skill:hover {
+    z-index: 2; /* The hovered skill has a higher z-index */
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 80px;
+  }
+
+  section {
+    flex-direction: column;
+    height: calc(100vh - 80px);
+    gap: 20vh;
+    scroll-margin-top: 80px;
+  }
+
+  section::before {
+    height: 80px;
+    margin: -80px 0 0;
+  }
+
+  h1,
+  h2 {
+    font-size: 1.5em;
+  }
 }
 
 /* Styles for medium screens */
 @media (max-width: 1024px) {
-    .profile-pic, .social-icons {
-        position: absolute;
-        top: 5px;
-        right: 5px;
-    }
+  h1,
+  h2 {
+    font-size: 1.75em;
+    line-height: 1.4;
+  }
 }
 
 /* Styles for small screens */
 @media (max-width: 768px) {
-    .profile-pic, .social-icons {
-        position: static; /* Reset to default positioning */
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  h1,
+  h2 {
+    font-size: 1.5em;
+    line-height: 1.3;
+  }
 }
 
+/* Styles for medium screens */
+@media (max-width: 1024px) {
+  p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin: 0 0 0.9em;
+    margin-top: 1.5em;
+  }
+}
 
+/* Styles for small screens */
+@media (max-width: 768px) {
+  p {
+    font-size: 0.8em;
+    line-height: 1.3;
+    margin: 0 0 0.8em;
+    margin-top: 2em;
+  }
+}
 
+/* Styles for medium screens */
+@media (max-width: 1024px) {
+  .profile-pic,
+  .social-icons {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+}
+
+/* Styles for small screens */
+@media (max-width: 768px) {
+  .profile-pic,
+  .social-icons {
+    position: static; /* Reset to default positioning */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Media queries */
+@media screen and (max-width: 600px) {
+  .paper {
+    flex: 0 0 100%; /* On screens smaller than 600px, make the papers take up the full width of the container */
+  }
+}
 
 /* Scrollbar styles */
 ::-webkit-scrollbar {
-    width: 10px;
+  width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 10px;
+  background: #f1f1f1;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
+  background: #888;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }
