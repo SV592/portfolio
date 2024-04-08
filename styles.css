@@ -480,9 +480,6 @@ li {
   width: calc(50% - 10px);
 }
 
-.experience-item ul {
-  display: none;
-}
 
 .experience-button {
   align-self: center; /* Add this line */
