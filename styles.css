@@ -422,7 +422,7 @@ li {
 
 .experience-item {
   background-color: #f9f9f9;
-  padding: 10px;
+  padding: 10px 30px;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -438,7 +438,7 @@ li {
   transform: scale(1.05);
 }
 
-.experience-item:hover .icon-container i {
+.experience-item:hover .experience-container i {
   color: green;
 }
 
@@ -453,10 +453,11 @@ li {
   text-align: right;
 }
 
-.icon-container {
+.experience-container {
   position: absolute;
   top: 10px;
   right: 10px;
+  margin-left: 10px;
 }
 
 .experience-content ul {
@@ -476,15 +477,12 @@ li {
   width: 100%;
 }
 
-.experience-item .title {
+.experience {
   padding: 0 10px; /* Add some horizontal padding */
   word-wrap: break-word; /* Break the word */
+  justify-content: flex-start; /* or center */
+  white-space: normal; /* Wrap the text */
 }
-
-/* .experience-row .experience-item {
-  width: calc(50% - 10px);
-/* } */
-
 
 .experience-button {
   align-self: center; /* Add this line */
@@ -513,7 +511,6 @@ li {
 
 /* Projects section */
 #projects {
-  /* background-color: #ffffff; White background */
   padding: 0; /* No padding */
   position: relative;
   flex: 1;
