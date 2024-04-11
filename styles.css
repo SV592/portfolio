@@ -476,9 +476,14 @@ li {
   width: 100%;
 }
 
-.experience-row .experience-item {
-  width: calc(50% - 10px);
+.experience-item .title {
+  padding: 0 10px; /* Add some horizontal padding */
+  word-wrap: break-word; /* Break the word */
 }
+
+/* .experience-row .experience-item {
+  width: calc(50% - 10px);
+/* } */
 
 
 .experience-button {
@@ -505,11 +510,6 @@ li {
   outline: none;
 }
 
-/* .experience-button:active {
-  border: none;
-  outline: none;
-  transform: scale(1.1);
-} */
 
 /* Projects section */
 #projects {
@@ -603,6 +603,8 @@ li {
   flex-direction: column;
   padding: 20px;
   margin-bottom: 10px;
+  height: 100%;
+  justify-content: center;
 }
 
 .paper:hover {
