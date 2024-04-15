@@ -493,7 +493,7 @@ li {
   align-self: center; /* Add this line */
   background-color: black;
   color: white;
-  padding: 5px 10px;
+  padding: 10px 10px;
   text-decoration: none;
   border-radius: 5px;
   transition: background-color 0.3s ease;
@@ -560,36 +560,7 @@ li {
   gap: 10px;
   margin-top: 10px;
   justify-content: center;
-}
-
-.github-link:hover,
-.live-demo:hover {
-  color: white;
-  text-decoration: none;
-  background-color: green;
-}
-
-.github-link,
-.live-demo {
-  position: relative;
-  padding: 5px 10px;
-  background-color: black;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 0.9em; /* Smaller text */
-  transition: all 0.3s ease;
-  text-transform: uppercase; /* Uppercase text */
-  display: inline-block; /* To apply padding and background color */
-}
-
-.github-link i {
-  font-size: 18px;
-}
-
-.live-demo i {
-  font-size: 15px;
+  font-size: 1.05em; /* Smaller text */
 }
 
 /* Papers Section */
@@ -613,7 +584,6 @@ li {
 .paper:hover {
   box-shadow: 0 0 20px rgba(0, 128, 0, 0.5);
   transform: scale(1.05);
-  opacity: 0.8;
 }
 
 .paper p {
@@ -635,13 +605,13 @@ li {
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
-  padding: 5px 10px;
+  padding: 10px 15px;
   background-color: black;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 0.9em; /* Smaller text */
+  font-size: 1em; /* Smaller text */
   transition: all 0.3s ease;
   text-transform: uppercase; /* Uppercase text */
 }
