@@ -64,14 +64,11 @@ main {
 section {
   display: flex;
   justify-content: center;
-  align-items: center;
   scroll-margin-top: 60px;
   flex-direction: column;
-  flex: 1;
   width: 80%; /* Set the width to 80% */
-  /* height: 25%; Set the height to 25% */
-  padding: 20px 0; /* Add vertical padding */
   margin: 0 auto; /* Add auto margins to horizontally center the section */
+  padding: 20px 0; /* Add vertical padding */
 }
 
 /* section > div {
@@ -753,7 +750,6 @@ p {
 
   section {
     flex-direction: column;
-    height: 90%;
     gap: 20%;
     scroll-margin-top: 10%;
   }
