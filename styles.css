@@ -411,10 +411,6 @@ li {
   text-align: center;
 }
 
-#experience {
-  padding: 20px;
-}
-
 .experience-content {
   display: flex;
   flex-direction: column;
@@ -441,6 +437,11 @@ li {
   transform: scale(1.05);
 }
 
+.experience-item:hover .experience-date {
+  color: green; /* Change the color to red on hover */
+  transition: all 0.3s ease; /* Add a transition effect */
+}
+
 .experience-item:hover .experience-container i {
   color: green;
 }
@@ -452,6 +453,7 @@ li {
 
 .experience-date {
   font-size: 0.9em;
+  font-weight: bold;
   color: #999;
   text-align: right;
 }
@@ -605,17 +607,13 @@ li {
   margin-bottom: 10px;
   height: 100%;
   justify-content: center;
+  text-align: center;
 }
 
 .paper:hover {
   box-shadow: 0 0 20px rgba(0, 128, 0, 0.5);
   transform: scale(1.05);
   opacity: 0.8;
-}
-
-.paper h4 {
-  text-align: center;
-  color: black; /* Darker text color */
 }
 
 .paper p {
@@ -748,10 +746,14 @@ p {
     height: 10%;
   }
 
+  body {
+    font-size: 10em; /* Increase the font size on larger screens */
+  }
+
   section {
-    flex-direction: column;
     gap: 20%;
     scroll-margin-top: 10%;
+    min-height: 600px;
   }
 
   section::before {
