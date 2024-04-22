@@ -281,14 +281,17 @@ li {
     max-height: 120px; /* Adjusted max-height for smaller screens */
     margin-top: 10px;
   }
+
+  .icon{
+    display: none;
+  }
 }
 /* ABOUT SECTION  */
 
 
 
 /* Skills section */
-.skills {
-  margin-bottom: 10px;
+#skills {
   position: relative;
 }
 
@@ -301,7 +304,6 @@ li {
   flex-direction: column; /* Stack the children vertically */
   justify-content: center; /* Center the children vertically */
   align-items: center; /* Center the children horizontally */
-  flex: 1; /* Make the carousel item take up as much vertical space as possible */
   min-height: 450px;
 }
 
@@ -321,16 +323,8 @@ li {
   font-size: 20px;
 }
 
-#skillsCarousel:hover .languages {
+#skillsCarousel:hover .carousel-icon {
   color: green; /* Green for languages */
-}
-
-#skillsCarousel:hover .frameworks {
-  color: green; /* Blue for frameworks */
-}
-
-#skillsCarousel:hover .technologies {
-  color: green; /* Red for technologies */
 }
 
 #skillsCarousel:hover {
@@ -354,19 +348,19 @@ li {
   align-items: center;
 }
 
+.skills-section {
+  background-image: radial-gradient(circle, #008000 1px, transparent 1px),
+    radial-gradient(circle, #008000 1px, transparent 1px);
+  background-size: 20px 20px; /* Size of the squares */
+  background-position: 0 0, 10px 10px; /* Position of the background */
+}
+
 .row {
   display: flex;
   justify-content: center;
   gap: 25px; /* Add some space between the items */
   margin-bottom: 25px;
   margin-top: 25px;
-}
-
-.skills-section {
-  background-image: radial-gradient(circle, #008000 1px, transparent 1px),
-    radial-gradient(circle, #008000 1px, transparent 1px);
-  background-size: 20px 20px; /* Size of the squares */
-  background-position: 0 0, 10px 10px; /* Position of the background */
 }
 
 .row li {
@@ -400,7 +394,7 @@ li {
   align-items: center; /*Vertically center the icon and the title */
   justify-content: center; /* Align the icon and the title to the left */
   width: 100%; /* Make the title wrapper take up as much horizontal space as possible */
-  padding: 0;
+  padding-top: 10px;
 }
 
 .title-icon-wrapper i {
@@ -415,19 +409,9 @@ li {
   line-height: 1; /* Remove the space below the title */
 }
 
-@media (max-width: 600px) {
-  #skills {
-    position: relative; /* Add this line */
-  }
-
-  #skills .skill {
-    position: absolute; /* Change this line */
-    width: 100%; /* Add this line */
-    z-index: 1; /* All skills have the same z-index by default */
-  }
-
-  #skills .skill:hover {
-    z-index: 2; /* The hovered skill has a higher z-index */
+@media (max-width: 768px) {
+  .row:last-of-type {
+    display: none; /* Hide the third row on smaller screens */
   }
 }
 
