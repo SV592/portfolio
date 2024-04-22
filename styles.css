@@ -150,7 +150,7 @@ li {
   background-color: #f5f5f5;
 }
 
-/* About section */
+/* ABOUT SECTION  */
 #about {
   position: relative;
 }
@@ -186,11 +186,6 @@ li {
   transition: all 0.3s ease;
 }
 
-#about .img-fluid {
-  align-self: center; /* Align this item to the center */
-  margin: 0 auto; /* Center the image horizontally */
-}
-
 .about-content:hover {
   box-shadow: 0 0 10px rgba(0, 128, 0, 0.3); /* darker green shadow on hover */
   transform: scale(1.05);
@@ -223,7 +218,7 @@ li {
 .button:focus {
     border: none;
     outline: none;
-  }
+}
 
 .button:hover {
   background-color: green;
@@ -238,7 +233,8 @@ li {
   border-radius: 50%;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
-  margin-right: 20px; /* Add space to the right of the image */
+  align-self: center; /* Align this item to the center */
+  margin: 0 auto; /* Center the image horizontally */
 }
 
 .about-icons {
@@ -262,28 +258,38 @@ li {
 
 /* Adjust the layout for smaller screens */
 @media (max-width: 768px) {
-  .about {
-    padding: 1em; /* Use smaller padding */
-  }
 
   .about h2 {
-    font-size: 1.5em; /* Use smaller font size */
+    font-size: 1em; /* Use smaller font size */
   }
 
-  .about p {
-    font-size: 0.9em; /* Use smaller font size */
-    max-width: 100%; /* Make the text take up the full width */
+  .about-text{
+    font-size: 5px;
   }
 
-  section {
-    flex-direction: row; /* Stack the items horizontally */
+  .button {
+    padding: 10px 25px; /* Adjusted padding for smaller screens */
+    font-size: 0.9em; /* Adjusted font size for smaller screens */
+  }
+
+  .button span{
+    display: none;
+  }
+
+  .img-fluid{
+    max-width: 120px; /* Adjusted max-width for smaller screens */
+    max-height: 120px; /* Adjusted max-height for smaller screens */
+    margin-top: 10px;
   }
 }
+/* ABOUT SECTION  */
+
+
 
 /* Skills section */
 .skills {
-  margin-top: 20px;
   margin-bottom: 10px;
+  position: relative;
 }
 
 #skillsCarousel {
@@ -408,6 +414,25 @@ li {
   margin-top: 7px; /* Add some space above the title */
   line-height: 1; /* Remove the space below the title */
 }
+
+@media (max-width: 600px) {
+  #skills {
+    position: relative; /* Add this line */
+  }
+
+  #skills .skill {
+    position: absolute; /* Change this line */
+    width: 100%; /* Add this line */
+    z-index: 1; /* All skills have the same z-index by default */
+  }
+
+  #skills .skill:hover {
+    z-index: 2; /* The hovered skill has a higher z-index */
+  }
+}
+
+
+
 
 /* Experience section */
 .section-title {
@@ -644,7 +669,7 @@ li {
   color: green; /* Change to the hover color for Python icon */
 }
 
-/* Footer styles */
+/* FOOTER SECTION */
 footer {
   position: fixed;
   bottom: 0;
@@ -680,45 +705,7 @@ footer {
   margin: 0;
 }
 
-/* Styles for larger screens */
-h1,
-h2 {
-  font-size: 2em;
-  line-height: 1.5;
-}
-
-/* Styles for larger screens */
-p {
-  font-size: 1em;
-  line-height: 1.5;
-  margin: 0 0 1em;
-}
-
-/* Styles for larger screens */
-.profile-pic,
-.social-icons {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-@media (max-width: 600px) {
-  #skills {
-    position: relative; /* Add this line */
-  }
-
-  #skills .skill {
-    position: absolute; /* Change this line */
-    width: 100%; /* Add this line */
-    z-index: 1; /* All skills have the same z-index by default */
-  }
-
-  #skills .skill:hover {
-    z-index: 2; /* The hovered skill has a higher z-index */
-  }
-}
-
-
+/* FOOTER SECTION */
 
 /* Styles for medium screens */
 @media (max-width: 1024px) {
