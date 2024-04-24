@@ -539,9 +539,7 @@ li {
 
 /* Projects section */
 #projects {
-  padding: 0; /* No padding */
   position: relative;
-  flex: 1;
 }
 
 #projects h2 {
@@ -555,7 +553,6 @@ li {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   margin-bottom: 20px; /* Space below each card */
   transition: all 0.3s ease;
-  padding: 20px; /* Some padding */
   border: 0px;
 }
 
@@ -587,6 +584,10 @@ li {
 }
 
 /* Papers Section */
+#papers {
+  position: relative;
+}
+
 .paper {
   border: 0px solid #ddd; /* Lighter border color */
   border-radius: 15px; /* Less rounded corners */
@@ -594,12 +595,10 @@ li {
   transition: all 0.3s ease;
   position: relative;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
-  flex: 1;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding: 30px;
   margin-bottom: 10px;
-  height: 100%;
   justify-content: center;
   text-align: center;
 }
@@ -621,7 +620,6 @@ li {
   grid-template-rows: repeat(2, 1fr); /* 2 rows */
   gap: 20px; /* Adjust as needed */
   justify-content: space-between;
-  padding: 15px;
 }
 
 .paper button {
@@ -659,6 +657,16 @@ li {
 
 .paper:hover .paper-icon {
   color: green; /* Change to the hover color for Python icon */
+}
+
+@media (max-width: 768px) {
+  .paper-preview {
+    grid-template-columns: repeat(1, 1fr); /* 2 columns */
+  }
+
+  #paper p {
+    padding-bottom: 5px;
+  }
 }
 
 /* FOOTER SECTION */
@@ -758,12 +766,6 @@ footer {
   }
 }
 
-/* Media queries */
-@media screen and (max-width: 600px) {
-  .paper {
-    flex: 0 0 100%; /* On screens smaller than 600px, make the papers take up the full width of the container */
-  }
-}
 
 /* Scrollbar styles */
 ::-webkit-scrollbar {
