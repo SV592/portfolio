@@ -201,7 +201,7 @@ li {
   display: flex;
   gap: 20px;
   justify-content: center;
-  padding: 20px;
+  margin-top: 10px;
 }
 
 .button {
@@ -429,7 +429,6 @@ li {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding: 0;
   align-items: center;
 }
 
@@ -469,8 +468,8 @@ li {
   font-size: 0.9em;
   font-weight: bold;
   color: #999;
-  text-align: right;
-  margin: 0;
+  text-align: center;
+  margin: 5px;
 }
 
 .experience-container {
@@ -482,7 +481,7 @@ li {
 
 .experience-content ul {
   list-style-type: none;
-  padding-left: 20px;
+  margin: 0;
 }
 
 .experience-content ul li::before {
@@ -516,6 +515,7 @@ li {
   transition: all 0.3s ease;
   border: none;
   outline: none;
+  margin-bottom: 5px;
 }
 
 .experience-button:hover {
@@ -579,6 +579,7 @@ li {
   display: flex;
   gap: 10px;
   margin-top: 10px;
+  margin-bottom: 5px;
   justify-content: center;
   font-size: 1.05em; /* Smaller text */
 }
@@ -612,6 +613,7 @@ li {
 .paper p {
   margin-bottom: 30px;
   text-align: center;
+  padding: 5px;
 }
 
 .paper-preview {
@@ -629,6 +631,7 @@ li {
   transform: translateX(-50%);
   padding: 10px 15px;
   background-color: black;
+  margin: 5px;
   color: #fff;
   border: none;
   border-radius: 5px;
