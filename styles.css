@@ -296,6 +296,10 @@ li {
   position: relative;
 }
 
+.skills{
+  margin-bottom: 12px;
+}
+
 #skillsCarousel {
   border-radius: 15px;
   background-color: #f9f9f9;
@@ -608,6 +612,7 @@ li {
 .paper:hover {
   box-shadow: 0 0 20px rgba(0, 128, 0, 0.5);
   transform: scale(1.05);
+  z-index: 1;
 }
 
 .paper p {
