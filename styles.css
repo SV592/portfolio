@@ -576,6 +576,12 @@ li {
   color: black;
 }
 
+.project-tags{
+    position: relative;
+    font-size: 25px;
+    transition: all 0.3s ease;
+}
+
 #projects .list-group-item:hover .language-icon {
   color: green; /* Change to the hover color for Python icon */
 }
