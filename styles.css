@@ -286,6 +286,7 @@ li {
   .icon{
     display: none;
   }
+
 }
 /* ABOUT SECTION  */
 
@@ -419,7 +420,6 @@ li {
     display: none; /* Hide the third row on smaller screens */
   }
 }
-
 
 
 
@@ -580,6 +580,7 @@ li {
     position: relative;
     font-size: 25px;
     transition: all 0.3s ease;
+    align-content: center;
 }
 
 #projects .list-group-item:hover .language-icon {
