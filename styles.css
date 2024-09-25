@@ -199,10 +199,12 @@ li {
 
 .button-container {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .button {
