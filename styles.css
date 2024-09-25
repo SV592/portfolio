@@ -213,6 +213,7 @@ li {
   border-radius: 5px;
   transition: background-color 0.3s ease;
   outline: none;
+  border: none;
   text-transform: uppercase;
 }
 
@@ -246,6 +247,7 @@ li {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  color: black;
 }
 
 .about-icons a {
@@ -274,6 +276,10 @@ li {
   }
 
   .button span{
+    display: none;
+  }
+
+  .a .button span{
     display: none;
   }
 
@@ -415,11 +421,7 @@ li {
   line-height: 1; /* Remove the space below the title */
 }
 
-@media (max-width: 768px) {
-  .row:last-of-type {
-    display: none; /* Hide the third row on smaller screens */
-  }
-}
+
 
 
 
@@ -508,6 +510,7 @@ li {
   white-space: normal; /* Wrap the text */
 }
 
+/* Not being USED */
 .experience-button {
   align-self: center; /* Add this line */
   background-color: black;
@@ -564,7 +567,7 @@ li {
 #projects .list-group-item:hover {
   box-shadow: 0 0 10px rgba(0, 128, 0, 0.3);
   transform: scale(1.05);
-  z-index: 2;
+  z-index: 1;
 }
 
 .language-icon {
@@ -578,7 +581,7 @@ li {
 
 .project-tags{
     position: relative;
-    font-size: 25px;
+    font-size: 20px;
     transition: all 0.3s ease;
     align-content: center;
 }
