@@ -58,11 +58,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#experience">Experience</a>
                   </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#projects">Projects</a>
-                </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#papers">Papers</a>
+                    <a class="nav-link" href="#papers">Course Projects</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="#projects">Personal Projects</a>
                 </li>
               </ul>
             </div>
@@ -86,7 +86,7 @@
                             My name is Shaquille, I'm a Master's student in Computer Science at the University of Waterloo.
                             I focus on solving complex software engineering challenges, 
                             particularly in build systems, dependency management, 
-                            and emerging technologies like machine learning and blockchain. My goal is to continue 
+                            and emerging technologies like machine learning and blockchains. My goal is to continue 
                             advancing my expertise while also making meaningful contributions to 
                             the software engineering community, whether in academia or industry.
                         </p>
@@ -122,7 +122,7 @@
                                 </div>
                                 <ul class="skills-container">
                                     <div class="row">
-                                        <li>Javascript
+                                        <li>Python
                                             <div class="star-rating">
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
@@ -131,13 +131,13 @@
                                                 <i class="fas fa-star"></i>
                                             </div>
                                         </li>
-                                        <li>Python
+                                        <li>Javascript
                                             <div class="star-rating">
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
-                                                <i class="far fa-star"></i>
+                                                <i class="fas fa-star"></i>
                                             </div>
                                         </li>
                                         <li>Typescript
@@ -178,18 +178,9 @@
                                                 <i class="far fa-star"></i>
                                             </div>
                                         </li>
-                                        <li>Cypher  
-                                            <div class="star-rating">
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="fas fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </li>
                                     </div>
                                     <div class="row">
-                                        <li>Java
+                                        <li>Cypher  
                                             <div class="star-rating">
                                                 <i class="fas fa-star"></i>
                                                 <i class="fas fa-star"></i>
@@ -535,8 +526,73 @@
                             
             </section>
             
+            <section id="papers" class="my-5">
+                <h2>Course Projects</h2>
+                <div class="paper-preview">
+                    <div class="paper">
+                        <div class="icon">
+                            <i class="fab fa-node-js paper-icon"></i>
+                        </div>
+                        <h4>Exploring Dependency Related Build Breakages In The NPM Ecosystem</h4>
+                        <p>This project analyzes dependency-related build failures within the <b>NPM</b> ecosystem by
+                            examining <b>JavaScript</b> projects. I utilized <b>Git</b> to track modifications in <b>package.json</b>
+                            files and employed <b>Docker</b> to create isolated, reproducible build environments.
+                            CI/CD pipelines, specifically <b>GitHub Actions</b>, were parsed to identify breaking changes,
+                            while tools like <b>nektos/act</b> and <b>docker-compose</b> were used to simulate the build process locally.
+                        </p>
+                        <button onclick="window.open('assets/papers/Exploring Dependency Related Build Breakages In the NPM Ecosystem.pdf');" class="button">
+                            <i class="fa fa-file-pdf project-tags"></i>
+                            <span>View</span></button>
+                    </div>
+                    <div class="paper">
+                        <div class="icon">
+                            <i class="fab fa-ethereum paper-icon "></i>
+                        </div>
+                        <h4>Code Review Practises On Ethereum Smart Contracts</h4>
+                        <p>This project assesses the effectiveness of code review for <b>Ethereum</b> smart contracts
+                            across major projects like <b>Uniswap</b> and <b>Aave</b>. Using <b>Git</b> 
+                            for version control and <b>Slither</b> for <b>static analysis</b>, vulnerabilities 
+                            such as <b>reentrancy</b>, <b>unchecked transfers</b>, and <b>zero-address</b> issues were identified. 
+                            
+                            </p>
+                        <button onclick="window.open('assets/papers/Code Review Practises On Etherum Smart Contracts.pdf');" class="button">
+                            <i class="fa fa-file-pdf project-tags"></i>
+                            <span>View</span></button>
+                    </div>
+                    <div class="paper">
+                        <div class="icon">
+                            <i class="fas fa-exclamation-triangle paper-icon"></i>
+                        </div>
+                        <h4>Predicting Build Breakage With Machine Learning.</h4>
+                        <p>This project is a literature survey focused on applying <b>machine learning</b> techniques to predict
+                            build failures in Continuous Integration (CI) systems. It reviews a range of approaches,
+                            including <b>Random Forests</b>, <b>Logistic Regression</b>, and <b>Deep Learning</b>,
+                            The survey explores key factors influencing <b>model performance</b>, such as <b>code complexity</b>, <b>commit frequency</b>, 
+                            and <b>noise</b> in the data. It also examines statistical methods like <b>ANOVA</b> and <b>Principal Component Analysis (PCA)</b>.</p>
+                        <button onclick="window.open('assets/papers/Predicting Build Breakage with Machine Learning.pdf');" class="button">
+                            <i class="fa fa-file-pdf project-tags"></i>
+                            <span>View</span></button>
+                    </div>
+                    <div class="paper">
+                        <div class="icon">
+                            <i class="fas fa-users paper-icon"></i>
+                        </div>
+                        <h4>Exploring the Prevalence of Social Biases In State Of The Art large language Models</h4>
+                        <p>This project investigates the prevalence of social biases in large language models like <b>GPT-2</b>,
+                            <b>DistilGPT-2</b>, <b>Bloom-560M</b>, and <b>Facebook-OPT-350M</b>, hosted on Hugging Face. 
+                            By analyzing the behavior of these models with prompts designed to evoke toxic or
+                            biased responses, we utilized tools like the <b>Perspective API</b> to assess generated content across 
+                            attributes such as toxicity, identity attack, and profanity.</p>
+                        <button onclick="window.open('assets/papers/Exploring the Prevalence of Social Biases in State of the Art large language Models.pdf');" class="button">
+                            <i class="fa fa-file-pdf project-tags"></i>
+                            <span>View</span></button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
         <section id="projects" class="my-5">
-                <h2>Projects</h2>
+                <h2>Personal Projects</h2>
                 <ul class="list-group">
                     <li class="list-group-item project">
                         <div class="icon">
@@ -589,63 +645,7 @@
                 </ul>
             </section>
         
-            <section id="papers" class="my-5">
-                <h2>Papers</h2>
-                <div class="paper-preview">
-                    <div class="paper">
-                        <div class="icon">
-                            <i class="fab fa-node-js paper-icon"></i>
-                        </div>
-                        <h4>Exploring Dependency Related Build Breakages In The NPM Ecosystem</h4>
-                        <p>This research aims to examine the prevalence and implications of dependency-related
-                            build failures in software development, specifically in the 
-                            NPM ecosystem. It seeks to identify the main causes of such failures and their 
-                            impact on project stability and reliability.</p>
-                        <button onclick="window.open('assets/papers/Exploring Dependency Related Build Breakages In the NPM Ecosystem.pdf');" class="button">
-                            <i class="fa fa-file-pdf project-tags"></i>
-                            <span>View</span></button>
-                    </div>
-                    <div class="paper">
-                        <div class="icon">
-                            <i class="fab fa-ethereum paper-icon "></i>
-                        </div>
-                        <h4>Code Review Practises On Ethereum Smart Contracts</h4>
-                        <p>The aim of this is to evaluate the code review process for Smart Contracts.
-                            It aims to assess the accuracy of pull request reviews,
-                            identify potential vulnerabilities or bugs introduced through merged requests of varying
-                            levels of project maturity. 
-                            </p>
-                        <button onclick="window.open('assets/papers/Code Review Practises On Etherum Smart Contracts.pdf');" class="button">
-                            <i class="fa fa-file-pdf project-tags"></i>
-                            <span>View</span></button>
-                    </div>
-                    <div class="paper">
-                        <div class="icon">
-                            <i class="fas fa-exclamation-triangle paper-icon"></i>
-                        </div>
-                        <h4>Predicting Build Breakage With Machine Learning.</h4>
-                        <p>This research aims to provide a comprehensive overview of existing research on predicting build breakages 
-                            using machine learning techniques. By examining ml models pros, cons, data sources and evaluation metrics,
-                            etc.</p>
-                        <button onclick="window.open('assets/papers/Predicting Build Breakage with Machine Learning.pdf');" class="button">
-                            <i class="fa fa-file-pdf project-tags"></i>
-                            <span>View</span></button>
-                    </div>
-                    <div class="paper">
-                        <div class="icon">
-                            <i class="fas fa-users paper-icon"></i>
-                        </div>
-                        <h4>Exploring the Prevalence of Social Biases In State Of The Art large language Models</h4>
-                        <p>This research aims to investigate social biases within state-of-the-art large language models,
-                            focusing on gender, ethnicity, age, etc. It seeks to address biases and promote inclusive AI systems,
-                            providing valuable resources for future studies.</p>
-                        <button onclick="window.open('assets/papers/Exploring the Prevalence of Social Biases in State of the Art large language Models.pdf');" class="button">
-                            <i class="fa fa-file-pdf project-tags"></i>
-                            <span>View</span></button>
-                    </div>
-                </div>
-            </section>
-        </div>
+            
         <footer>
             <div class="footer-center">
                 <p class="text-sm">&copy; 2024 Shaquille Pearson </p>
