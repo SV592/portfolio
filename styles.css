@@ -71,16 +71,6 @@ section {
   padding: 20px 0; /* Add vertical padding */
 }
 
-/* section > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  margin: 20px 0; /* Add vertical margin */
-  /* padding: 20px 0; Add vertical padding */
-/* } */ 
-
 section ul {
   list-style-type: none;
   padding: 0;
@@ -188,7 +178,7 @@ li {
 
 .about-content:hover {
   box-shadow: 0 0 10px rgba(0, 128, 0, 0.3); /* darker green shadow on hover */
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
 #about p {
@@ -260,42 +250,6 @@ li {
 .about-icons a:hover {
   color: green;
 }
-
-/* Adjust the layout for smaller screens */
-@media (max-width: 768px) {
-
-  .about h2 {
-    font-size: 1em; /* Use smaller font size */
-  }
-
-  .about-text{
-    font-size: 5px;
-  }
-
-  .button {
-    padding: 10px 25px; /* Adjusted padding for smaller screens */
-    font-size: 0.9em; /* Adjusted font size for smaller screens */
-  }
-
-  .button span{
-    display: none;
-  }
-
-  .a .button span{
-    display: none;
-  }
-
-  .img-fluid{
-    max-width: 120px; /* Adjusted max-width for smaller screens */
-    max-height: 120px; /* Adjusted max-height for smaller screens */
-    margin-top: 10px;
-  }
-
-  .icon{
-    display: none;
-  }
-
-}
 /* ABOUT SECTION  */
 
 
@@ -343,7 +297,7 @@ li {
 
 #skillsCarousel:hover {
   box-shadow: 0 0 10px rgba(0, 128, 0, 0.3); /* darker green shadow on hover */
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
 .carousel-control-prev i,
@@ -353,7 +307,7 @@ li {
 
 .carousel-control-prev :hover,
 .carousel-control-next :hover {
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
 .skills-container {
@@ -426,7 +380,6 @@ li {
 
 
 
-
 /* Experience section */
 .section-title {
   font-size: 2em;
@@ -456,7 +409,7 @@ li {
 
 .experience-item:hover {
   box-shadow: 0 0 10px rgba(0, 128, 0, 0.3);
-  transform: scale(1.05);
+  transform: scale(1.01);
 }
 
 .experience-item:hover .experience-date {
@@ -538,13 +491,6 @@ li {
   outline: none;
 }
 
-@media (max-width: 768px) {
-  .experience-date {
-    font-size: 0.8em; /* Adjust the font size for smaller screens */
-    text-align: center; /* Change the text alignment for smaller screens */
-    padding-bottom: 10px;
-  }
-}
 
 
 /* Projects section */
@@ -568,7 +514,7 @@ li {
 
 #projects .list-group-item:hover {
   box-shadow: 0 0 10px rgba(0, 128, 0, 0.3);
-  transform: scale(1.05);
+  transform: scale(1.01);
   z-index: 1;
 }
 
@@ -623,7 +569,7 @@ li {
 
 .paper:hover {
   box-shadow: 0 0 20px rgba(0, 128, 0, 0.5);
-  transform: scale(1.05);
+  transform: scale(1.01);
   z-index: 1;
 }
 
@@ -679,15 +625,6 @@ li {
   color: green; /* Change to the hover color for Python icon */
 }
 
-@media (max-width: 768px) {
-  .paper-preview {
-    grid-template-columns: repeat(1, 1fr); /* 2 columns */
-  }
-
-  #paper p {
-    padding-bottom: 5px;
-  }
-}
 
 /* FOOTER SECTION */
 footer {
@@ -734,6 +671,25 @@ footer {
     font-size: 1.75em;
     line-height: 1.4;
   }
+
+  p {
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin: 0 0 0.9em;
+    margin-top: 1.5em;
+  }
+
+  .profile-pic,
+  .social-icons {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+
+  div:hover {
+    transform: none !important; /* Disables any transform on hover for all divs */
+  }
+  
 }
 
 /* Styles for small screens */
@@ -743,40 +699,37 @@ footer {
     font-size: 1.5em;
     line-height: 1.3;
   }
-}
 
-/* Styles for medium screens */
-@media (max-width: 1024px) {
-  p {
-    font-size: 0.9em;
-    line-height: 1.4;
-    margin: 0 0 0.9em;
-    margin-top: 1.5em;
-  }
-}
-
-/* Styles for small screens */
-@media (max-width: 768px) {
   p {
     font-size: 0.8em;
     line-height: 1.3;
     margin: 0 0 0.8em;
     margin-top: 2em;
   }
-}
 
-/* Styles for medium screens */
-@media (max-width: 1024px) {
-  .profile-pic,
-  .social-icons {
-    position: absolute;
-    top: 5px;
-    right: 5px;
+
+  /* About section */
+  .about h2 {
+    font-size: 1em; /* Use smaller font size */
   }
-}
 
-/* Styles for small screens */
-@media (max-width: 768px) {
+  .about-text{
+    font-size: 5px;
+  }
+
+  .button {
+    padding: 10px 25px; /* Adjusted padding for smaller screens */
+    font-size: 0.9em; /* Adjusted font size for smaller screens */
+  }
+
+  .button span{
+    display: none;
+  }
+
+  .a .button span{
+    display: none;
+  }
+
   .profile-pic,
   .social-icons {
     position: static; /* Reset to default positioning */
@@ -784,6 +737,37 @@ footer {
     margin-left: auto;
     margin-right: auto;
   }
+
+  .img-fluid{
+    max-width: 120px; /* Adjusted max-width for smaller screens */
+    max-height: 120px; /* Adjusted max-height for smaller screens */
+    margin-top: 10px;
+  }
+
+  .icon{
+    display: none;
+  }
+
+  /* Paper section */
+  .paper-preview {
+    grid-template-columns: repeat(1, 1fr); /* 2 columns */
+  }
+
+  #paper p {
+    padding-bottom: 5px;
+  }
+
+  .experience-date {
+    font-size: 0.8em; /* Adjust the font size for smaller screens */
+    text-align: center; /* Change the text alignment for smaller screens */
+    padding-bottom: 10px;
+  }
+
+
+  div:hover {
+    transform: none !important; /* Disables any transform on hover for all divs */
+  }
+  
 }
 
 
