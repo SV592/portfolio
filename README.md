@@ -25,7 +25,7 @@ You can view the live version of my portfolio website [here](https://shaquillepe
 To run this portfolio website locally, you’ll need:
 
 - **Web Browser**: A modern web browser such as Chrome, Firefox, Safari, or Edge for testing and viewing.
-- **Node.js and npm** (optional): If you’re using any build tools or package managers to install dependencies or run scripts.
+- **Node.js and npm** (optional): Required if you plan to use Firebase analytics.
 - **Git** (optional): To clone the repository if not downloading directly from GitHub.
 
 
