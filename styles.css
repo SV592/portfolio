@@ -38,6 +38,11 @@ li {
   color: #777;
 }
 
+section{
+  transition: all 0.3s ease;
+  text-rendering: optimizeLegibility;
+  text-rendering: optimizeSpeed;
+}
 
 /* Header styles */
 .navbar-dark .navbar-nav .nav-link {
@@ -155,12 +160,12 @@ section ul li {
   transition: all 0.3s ease;
   position: relative;
   min-height: 450px;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
 .about-content:hover {
   box-shadow: 0 0 10px rgba(0, 128, 0, 0.3); /* darker green shadow on hover */
-  transform: scale(1.01);
+  transform: scale(1.01) translateZ(0)
 }
 
 #about p {
