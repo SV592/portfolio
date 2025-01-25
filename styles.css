@@ -510,6 +510,18 @@ section ul li {
   color: black;
 }
 
+.language-icon2{
+  /* adjust png size */
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  transition: all 0.3s ease;
+  color: black;
+  
+}
+
+
+
 .project-tags{
     position: relative;
     font-size: 20px;
@@ -645,12 +657,15 @@ section ul li {
 footer {
   position: fixed;
   bottom: 0;
+  left: 0;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #343a40;
-  z-index: 100;
+  z-index: 1000; /* Increased z-index to ensure it's above other elements */
+  /* padding: 10px 0; */
+  box-sizing: border-box;
 }
 
 .footer-center {
@@ -669,13 +684,15 @@ footer {
   color: white;
   font-size: 20px;
   justify-content: center;
+  margin: 0 5px; /* Added margin for spacing between icons */
 }
 
 .footer-center p {
   color: white;
   font-size: 0.8em;
-  margin: 0;
+  margin: 5px 0 0; /* Adjusted margins */
 }
+
 
 /* FOOTER SECTION */
 
