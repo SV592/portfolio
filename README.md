@@ -37,10 +37,3 @@ To run the website locally, follow these steps:
    ```bash
    git clone https://github.com/SV592/portfolio.git
    cd portfolio
-
-## 🖼️ Screenshots
-<img width="1909" alt="about" src="https://github.com/user-attachments/assets/9633b01d-9633-4039-ad0a-8a006652210f">
-<img width="1757" alt="skills" src="https://github.com/user-attachments/assets/09abdc03-9255-434a-8843-45fe3f4626f4">
-<img width="1702" alt="experience" src="https://github.com/user-attachments/assets/7b9a720c-8f7d-445b-aab5-a05ecf8217e5">
-<img width="1633" alt="course projects" src="https://github.com/user-attachments/assets/6d81f604-e805-41f0-bd10-1e4b03024b57">
-<img width="1715" alt="personal projects" src="https://github.com/user-attachments/assets/4f621931-9b35-44e4-9290-950af92ce14e">
