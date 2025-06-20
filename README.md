@@ -17,7 +17,7 @@ You can view the live version of my portfolio website [here](https://shaquillepe
 ## 🛠️ Built With
 
 - **Frontend**: HTML, CSS, JavaScript (mostly for analytics)
-- **Libraries**: Bootstrap, Magnific Popup, jQuery
+- **Libraries**: Bootstrap
 - **Icons & Fonts**: FontAwesome
 
 ## 📋 Requirements
